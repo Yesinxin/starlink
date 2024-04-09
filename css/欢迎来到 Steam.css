@@ -348,7 +348,8 @@ div.header .menuitem:hover {
 }
 
 .ContentOne .storeNav ul .emptyNav {
-    width: 670px;
+    width: 670px
+    ;
 }
 
 .ContentOne .storeNav ul .search {

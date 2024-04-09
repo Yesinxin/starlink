@@ -1,0 +1,415 @@
+/* 头部导航栏样式 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    width: 1400px;
+}
+.header {
+
+    background-position: center top;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.content {
+    width: 100%;
+    height: 68px;
+    z-index: 402;
+    background-color: #1b2838;
+}
+
+.logo {
+    padding-top: 10px;
+    float: left;
+    width: 176px;
+    height: 44px;
+}
+.logo img {
+    width: 100%;
+    height: 56px;
+
+}
+/* 导航栏菜单栏 */
+.supernav_container {
+    position: absolute;
+    width: 168px;
+    left: 200px;
+    top: -13px;
+}
+
+div.header .menuitem {
+    padding: 45px 7px 7px;
+    line-height: 16px;
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* 菜单栏字体悬停样式 */
+div.header .menuitem:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+a {
+    color: white;
+}
+/* 菜单下拉框 */
+.xl {
+    display: none;
+    position: absolute;
+    width: 88px;
+    top: 90%;
+    left: 0;
+    background: #000;
+    padding: 5px 15px 10px;
+    box-shadow: 3px 3px 5px -3px #000;
+    text-align: left;
+    z-index: 500;
+}
+
+/* 菜单栏下拉框2 */
+.xl2 {
+    display: none;
+    position: absolute;
+    width: 88px;
+    top: 90%;
+    left: 30%;
+    background: #000;
+    padding: 5px 15px 10px;
+    box-shadow: 3px 3px 5px -3px #000;
+    text-align: left;
+    z-index: 500;
+}
+
+/* 下拉框距离左边间距 */
+.submenu_content {
+    margin-left: 15px;
+}
+
+/* 菜单下拉框字体颜色 */
+.submenuitem {
+    color: #ffffff;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* 菜单栏下拉框字体悬浮 */
+.con:hover .xl {
+    display: block;
+    height: 179px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 1;
+}
+
+/* 下拉框2 */
+.cons:hover .xl2 {
+    display: block;
+    height: 188px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.xl2:hover {
+    color: #ffffff;
+}
+
+/* Steam下载安装 */
+.actions {
+    float: right;
+    color: #b8b6b4;
+    font-size: 11px;
+    z-index: 400;
+}
+
+.action_menu {
+    position: relative;
+    line-height: 24px;
+    display: inline-flex;
+    top: 25px;
+}
+
+.header_installsteam_btn {
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+
+/* 安装背景 */
+.header_installsteam_btn_content {
+    background-color: #5c7e10;
+}
+
+/* 安装样式设置 */
+.header_installsteam_btn_content {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url("../steam/btn_header_installsteam_download.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    font-weight: normal;
+}
+
+/* 登录 */
+.action_link {
+    color: #b8b6b4;
+    padding: 0 4px;
+    font-weight: normal;
+}
+
+.actions a:hover {
+    color: #FFFFFF;
+}
+
+.actions span:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* 语言 */
+.pulldown {
+    display: inline-block;
+    padding-left: 4px;
+    line-height: 25px;
+    padding-right: 18px;
+    background-image: url("../steam/btn_arrow_down_padded.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.pulldown {
+    display: inline-block;
+}
+
+/* 语言下拉框 */
+.popup_block_new .popup_body {
+    border: 1px solid #171a21;
+    position: relative;
+    background-color: #171a21;
+}
+
+.action_menu > * {
+    vertical-align: top;
+}
+
+.popup_block_new {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    box-shadow: 0 0 12px #000000;
+    right: 0;
+}
+
+/* 语言下拉框悬浮 */
+/* 语言文字 */
+.popup_menu_item {
+    top: 5%;
+    display: block;
+    padding: 5px 12px;
+    color: #b8b6b4;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wrapper {
+    width: 100%;
+    background-image: linear-gradient(to right, #051a30, #2B4B84, #181b2c);
+}
+.box {
+    overflow: hidden;
+    width: 100%;
+}
+.boxleft {
+    width: 80%;
+
+}
+.boxleft h1 {
+    margin: 60px 0 0 40px;
+    font-size: 62px;
+    color: white;
+    text-shadow: 5px 5px 5px yellow;
+
+}
+.boxleft img {
+    margin: 20px 40px;
+    width: 80%;
+
+}
+
+.boxright {
+    width: 25%;
+    float: right;
+    position: relative;
+    bottom: 1090px;
+    background: #44639a;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.boxright img {
+    width: 200px;
+    margin: 20px auto;
+}
+.boxright h1 {
+    line-height: 2.5;
+    font-size: 24px;
+}
+.boxright p {
+    display: block;
+    background-color: #030913;
+    color: white;
+    border: 5px solid rgb(0, 0, 0);
+    height: 30px;
+    line-height: 2.5;
+    padding-top: 10px;
+}
+.boxright span {
+    display: block;
+    background: #030913;
+    color: whitesmoke;
+}
+.boxright h2{margin: 10px auto;}
+.sc1 img{width: 900px;margin: 10px 40px;}
+.sc1 p {
+    font-size: 24px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px green;
+    padding-left: 45px;
+    color: white;
+    border-top: 10px solid yellowgreen;
+}
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.comic-button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0 #ff5252;
+}
+
+.comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+.sc1 {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_spacer {
+    position: relative;
+    height: 210px;
+    top: auto;
+    bottom: auto;
+    padding: 0;
+    background-color: #1D2024;
+}
+
+#footer {
+
+    background: #171a21;
+    top: 14%;
+    left: 0;
+    width: 100%;
+    height: 183px;
+
+    -webkit-text-size-adjust: none;
+}
+
+.footer_content {
+    top: 55px;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#footer_logo img {
+    height: 25px;
+    width: auto;
+}
+
+.rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+#footer_logo {
+    float: left;
+    padding-top: 2px;
+}
+
+#footer_logo_steam {
+    float: right;
+    padding: 2px;
+}
+
+#footer #footer_text {
+    float: left;
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8F98A0;
+}
+
+#footer #footer_text a {
+    color: #C6D4DF;
+}
+
+#footer #footer_text a:hover {
+    color: #FFFFFF;
+}
+
+.valve_links {
+    margin-top: 8px;
+    float: left;
+    font-weight: normal;
+    font-size: 13px;
+    color: #61686d;
+}
+
+.valve_links a {
+    color: #C6D4DF;
+}
+
+.valve_links a:hover {
+    color: #FFFFFF;
+}

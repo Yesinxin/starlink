@@ -1,0 +1,233 @@
+<html > <head>
+    <meta charset="utf-8">
+        <title>
+            遊戲頁面
+        </title>
+        <!-- 导入网页logo -->
+        <link rel="icon" href="./src/Frame 48.svg">
+            <!-- 导入清除全局样式 -->
+            <link rel="stylesheet" href="css/reset.css">
+                <!-- 导入本项目css文件 -->
+                <link rel="stylesheet" href="./css/GAMEPAGE.CSS"></head>
+                <body>
+                    <!-- Head 页首 导航栏 -->
+                    <div class="header">
+                        <div class="content">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="./src/Frame 48.svg" width="176" height="44"></a>
+                                </div>
+                                <!-- 菜单栏 -->
+                                <div class="supernav_container">
+                                    <div class="con">
+                                        <a class="menuitem shop " href="css/欢迎来到 Steam.html">
+                                            <span>商店</span>
+                                        </a>
+                                        <div class="xl">
+                                            <div class="submenu_content">
+                                                <a class="submenuitem" href="css/欢迎来到 Steam.html">主页</a>
+                                                <a class="submenuitem" href="#">搜尋佇列</a>
+                                                <a class="submenuitem" href="#">願望清單</a>
+                                                <a class="submenuitem" href="#">點數商店</a>
+                                                <a class="submenuitem" href="#">新聞</a>
+                                                <a class="submenuitem" href="#">統計</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cons">
+                                        <a class="menuitem community " href="css/steam 社群.html">社群</a>
+                                        <div class="xl2">
+                                            <div class="submenu_content">
+                                                <a class="submenuitem" href="css/歡迎來到 Steam.html">首頁</a>
+                                                <a class="submenuitem" href="#">討論</a>
+                                                <a class="submenuitem" href="#">創意工坊</a>
+                                                <a class="submenuitem" href="#">市場</a>
+                                                <a class="submenuitem" href="#">實況直播</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="menuitem supernav" href="關於/steam.html">關於</a>
+                                    <a class="menuitem supernav" href="wu.html">客服</a>
+                                    <!-- 菜单栏下拉框 -->
+                                </div>
+                                <div class="actions">
+                                    <div class="action_menu">
+                                        <div class="header_installsteam_btn header_installsteam_btn_green">
+                                            <a class="header_installsteam_btn_content" href="关于/steam.html">安装 </a>
+                                        </div>
+                                        <a class="action_link" href="#">Log in</a>
+                                        &nbsp;|&nbsp;
+                                        <div class="pulldowns" onclick="show()">
+                                            <span class="pulldown action_link" id="language_pulldown">语言</span>
+                                            <div class="popup_block_new" id="language_dropdown">
+                                                <div class="popup_body popup_menu">
+                                                    <a class="popup_menu_item tight" href="#">简体中文</a>
+                                                    <a class="popup_menu_item tight" href="#">繁體中文（繁体中文）</a>
+                                                    <a class="popup_menu_item tight" href="#">日本語（日语））</a>
+                                                    <a class="popup_menu_item tight" href="#">한국어（韩语））</a>
+                                                    <a class="popup_menu_item tight" href="#">ไทย（泰语））</a>
+                                                    <a class="popup_menu_item tight" href="#">български（保加利亚语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Čeština（捷克语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Dansk（丹麦语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Deutsch（德语）</a>
+                                                    <a class="popup_menu_item tight" href="#">English（英语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Español-España（西班牙语 - 西班牙）</a>
+                                                    <a class="popup_menu_item tight" href="#">Español - Latinoamérica（西班牙语 - 拉丁美洲）</a>
+                                                    <a class="popup_menu_item tight" href="#">Ελληνικά（希腊语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Français（法语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Italiano（意大利语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Magyar（匈牙利语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Nederlands（荷兰语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Norsk（挪威语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Polski（波兰语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Português（葡萄牙语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Português-Brasil（葡萄牙语 - 巴西）</a>
+                                                    <a class="popup_menu_item tight" href="#">return false;"&gt;Română（罗马尼亚语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Русский（俄语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Suomi（芬兰语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Svenska（瑞典语）</a>
+                                                    <a class="popup_menu_item tight" href="#">Türkçe（土耳其语））</a>
+                                                    <a class="popup_menu_item tight" href="#">Tiếng Việt（越南语）</a>
+                                                    <a class="popup_menu_item tight" href="#">return false;"&gt;Українська（乌克兰语）</a>
+                                                    <a class="popup_menu_item tight" href="#">return false;"&gt;Українська报告翻译问题</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="game_background_glow">
+                                <div class="box">
+                                    <div class="boxleft">
+                                        <h1>CYPERPUNK2077</h1>
+                                        <img src="./src/header_tchinese.jpg" alt=""></div>
+                                        <div class="sc1">
+                                            <p>動作冒險開放世界《電馭叛客 2077》是一款設定於黑暗未來的角色扮演遊戲，將讓你深入沉溺於肉體改造、爭權奪利又紙醉金迷的巨型都市「夜城」。</p>
+                                            <p>自訂角色兼容並蓄 出色的頭目戰</p>
+                                            <img src="./src/cyberpunk2077-ue-970x300-experience-zht-970x300-fcec858d2b97.jpg" alt="">
+                                            <p>電馭叛客 2077 以巨型都市「夜城」為舞台的動作冒險開放世界角色扮演遊戲《電馭叛客 2077》中，你將化身電馭叛客傭兵，孤注一擲，死裡求生。
+                                                體驗全新免費追加內容與調整強化，接下委託逐步打響名號，再滿足升級條件自由打造角色及遊玩風格。 讓因緣際會和每一次抉擇左右劇情與世界的走向。 夜城出傳奇，
+                                                你又將寫下怎樣的傳奇？ 實裝更新檔 2.1 版本徹底身歷其境 免費更新檔案 2.1
+                                                版本帶來再進化的夜城！搭乘全面開放的夜城區間捷運系統、透過【隨身聽】隨時隨地收聽優質好音樂，和親密的另一半在家中共度甜蜜時光，參加可重複遊玩的賽車任務、駕駛全新車輛、享受進化的重機戰鬥及操駕手感、探索不為人知的祕密以及其他更多內容！
+                                                創造專屬的電馭叛客 化為配有神經機械改造裝置的都會法外傭兵，叱吒夜城街頭。 探索未來之城 讓人百遊不厭的夜城處處驚奇，無奇不有。
+                                                而目的地、動身時間、交通手段，一切操之在己。 締造傳奇 放膽冒險，在夜城結下不解之緣，影響各個難忘之人的命運。 領取專屬物品 參加「我的獎勵」，領取以 CD
+                                                PROJEKT RED 遊戲為靈感的遊戲內可用物品與數位特典。 前往 CYBERPUNK.NET</p>
+                                        </div>
+
+                                        </div>
+                                        <div class="boxright">
+                                            <div >
+                                                <div>
+                                                    <img src="./src/330px-CD_Projekt_logo.svg.png" alt=""></div>
+                                                    <h1>$1360.00</h1>
+                                                    <button class="comic-button">立即購買</button>
+                                                    <button class="comic-button">新增購物車</button>
+                                                    <button class="comic-button">加入許願清單</button>
+
+                                                    <div>
+                                                        <p>開發者CD PROJEKT RED</p>
+                                                    </div>
+                                                    <div>
+                                                        <h2>最低配備:</h2>
+                                                        <span>需要 64 位元的處理器及作業系統
+                                                            <br>作業系統: 64-bit Windows 10
+                                                            <br>處理器: Core i7-6700 or Ryzen 5 1600
+                                                            <br>記憶體: 12 GB 記憶體
+                                                            <br>顯示卡: GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380
+                                                            <br>DirectX: 版本：12
+                                                            <br>儲存空間: 70 GB 可用空間</span>
+                                                        <span>建議配備:
+                                                            <br>需要 64 位元的處理器及作業系統
+                                                            <br>作業系統: 64-bit Windows 10
+                                                            <br>處理器: Core i7-12700 or Ryzen 7 7800X3D
+                                                            <br>記憶體: 16 GB 記憶體
+                                                            <br>顯示卡: GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770
+                                                            <br>DirectX: 版本：12
+                                                            <br>儲存空間: 70 GB 可用空間
+                                                            <br>備註: SSD required.
+                                                        </span>
+                                                    </div>
+
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!-- Foot 页脚 -->
+                                    <!-- Footer -->
+                                    <div id="footer_spacer" style="" class="">
+
+                                        <div id="footer" class="">
+                                            <div class="footer_content">
+                                                <div class="rule"></div>
+                                                <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+                                                    <div>©2022 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
+                                                    <div>所有的价格均已包含增值税（如适用）。&nbsp;&nbsp;
+                                                        <a href="#" target="_blank" rel="noreferrer">隐私政策</a>
+                                                        &nbsp; | &nbsp;
+                                                        <a href="#" target="_blank" rel="noreferrer">法律信息</a>
+                                                        &nbsp; | &nbsp;
+                                                        <a href="#" target="_blank" rel="noreferrer">Steam 订户协议</a>
+                                                        &nbsp; | &nbsp;
+                                                        <a href="#" target="_blank" rel="noreferrer">退款</a>
+                                                        &nbsp; | &nbsp;
+                                                        <a href="#" target="_blank" rel="noreferrer">Cookie</a>
+                                                    </div>
+
+                                                </div>
+                                                <div style="clear: left;"></div>
+                                                <br>
+                                                    <div class="rule"></div>
+                                                    <div
+                                                        class="valve_links"
+                                                        data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+                                                        <a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">關於我們</a>
+                                                        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">工作機會</a>
+                                                        &nbsp; | &nbsp;<a
+                                                            href="http://www.steampowered.com/steamworks/"
+                                                            target="_blank"
+                                                            rel="noreferrer">works</a>
+                                                        &nbsp; | &nbsp;<a
+                                                            href="https://partner.steamgames.com/steamdirect"
+                                                            target="_blank"
+                                                            rel="noreferrer">分销</a>
+                                                        &nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">客服</a>
+                                                        &nbsp; | &nbsp;<a
+                                                            href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_"
+                                                            target="_blank"
+                                                            rel="noreferrer">禮物卡</a>
+                                                        &nbsp; | &nbsp;<a
+                                                            href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"
+                                                            target="_blank"
+                                                            rel="noopener">
+                                                                Steam</a>
+                                                            &nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer">
+                                                                    @steam</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    /* 语言下拉框固定悬浮 */
+                                                    var state = true;
+                                                    function show() {
+                                                        if (state == true) {
+                                                            document
+                                                                .getElementById("language_dropdown")
+                                                                .style
+                                                                .display = "block";
+                                                            state = !state;
+                                                        } else if (state == false) {
+                                                            document
+                                                                .getElementById("language_dropdown")
+                                                                .style
+                                                                .display = "none";
+                                                            state = !state;
+                                                        }
+                                                    }
+                                                </script>
+
+                                            </body>
+                                        </html

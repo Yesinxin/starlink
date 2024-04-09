@@ -1,0 +1,697 @@
+/* 背景颜色 */
+body {
+    background-image: linear-gradient(-45deg, rgb(0, 255, 255), rgb(109, 231, 223), rgb(35, 166, 213), rgb(151, 213, 211));
+    background-size: 400%;
+    animation: bganimation 5s infinite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+}
+
+@keyframes bganimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* 头部导航栏样式 */
+.header {
+
+    background: #171a21;
+
+}
+
+.header {
+
+    background-position: center top;
+    min-width: 940px;
+    height: 104px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+div.header {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.content {
+    right: 0;
+    position: relative;
+    width: 100%;
+    height: 104px;
+    margin: 0 auto;
+    transition: right 0.25s;
+    z-index: 402;
+}
+.logo {
+    padding-top: 10px;
+    float: left;
+    width: 176px;
+    height: 44px;
+}
+
+/* 导航栏菜单栏 */
+.supernav_container {
+    position: absolute;
+    width: 168px;
+    left: 200px;
+}
+
+div.header .menuitem {
+    position: relative;
+    padding: 27px 7px 7px;
+    line-height: 16px;
+    float: left;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+}
+
+/* 菜单栏字体悬停样式 */
+div.header .menuitem:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* 菜单下拉框 */
+.xl {
+    display: none;
+    position: absolute;
+    width: 88px;
+    top: 90%;
+    left: 0;
+    background: #000;
+    padding: 5px 15px 10px;
+    box-shadow: 3px 3px 5px -3px #000;
+    text-align: left;
+    z-index: 500;
+}
+
+/* 菜单栏下拉框2 */
+.xl2 {
+    display: none;
+    position: absolute;
+    width: 88px;
+    top: 90%;
+    left: 30%;
+    background: #000;
+    padding: 5px 15px 10px;
+    box-shadow: 3px 3px 5px -3px #000;
+    text-align: left;
+    z-index: 500;
+}
+
+/* 下拉框距离左边间距 */
+.submenu_content {
+    margin-left: 15px;
+}
+
+/* 菜单下拉框字体颜色 */
+.submenuitem {
+    color: #ffffff;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* 菜单栏下拉框字体悬浮 */
+.con:hover .xl {
+    display: block;
+    height: 179px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 1;
+}
+
+/* 下拉框2 */
+.cons:hover .xl2 {
+    display: block;
+    height: 188px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.xl2:hover {
+    color: #ffffff;
+}
+
+.submenu_content .submenuitem:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.supernav_content {
+    display: none;
+    height: 0;
+    transition: 0.2s;
+    opacity: 0;
+    transform: translateY(-189);
+    background: #000;
+}
+
+/* 下拉框字体样式 */
+.submenuitem {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #b8b6b4;
+    padding: 6px 10px 6px 0;
+    transition: height 0.25s;
+    overflow: hidden;
+    display: block;
+}
+
+/* Steam下载安装 */
+.actions {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    height: 21px;
+    line-height: 21px;
+    color: #b8b6b4;
+    font-size: 11px;
+    z-index: 400;
+}
+
+.action_menu {
+    position: relative;
+    line-height: 24px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.action_menu > * {
+    vertical-align: top;
+}
+
+.header_installsteam_btn {
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+
+/* 安装背景 */
+.header_installsteam_btn_content {
+    background-color: #5c7e10;
+}
+
+/* 安装样式设置 */
+.header_installsteam_btn_content {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url("../steam/btn_header_installsteam_download.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+
+/* 登录 */
+.action_link {
+    color: #b8b6b4;
+    padding: 0 4px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+
+.actions a:hover {
+    color: #FFFFFF;
+}
+
+.actions span:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* 语言 */
+.pulldown {
+    display: inline-block;
+    padding-left: 4px;
+    line-height: 25px;
+    padding-right: 18px;
+    background-image: url("../steam/btn_arrow_down_padded.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+
+.pulldowns {
+    display: inline-block;
+}
+
+/* 语言下拉框 */
+.popup_block_new .popup_body {
+    border: 1px solid #171a21;
+    position: relative;
+    background-color: #171a21;
+}
+
+.action_menu > * {
+    vertical-align: top;
+}
+
+.popup_block_new {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    box-shadow: 0 0 12px #000000;
+    right: 0;
+}
+
+/* 语言下拉框悬浮 */
+/* 语言文字 */
+.popup_menu_item {
+    top: 5%;
+    display: block;
+    padding: 5px 12px;
+    color: #b8b6b4;
+    text-transform: none;
+    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+h2.pageheader {
+    color: #ffffff;
+    font-size: 34px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+
+}
+h2 {
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    padding-top: 2px;
+}
+/* 搜索栏 */
+.ContentOne .storeNav {
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E);
+    z-index: 5;
+}
+
+.ContentOne .storeNav ul {
+    text-align: center;
+    vertical-align: center;
+}
+
+.ContentOne .storeNav ul li {
+    float: left;
+    list-style: none;
+    height: 35px;
+    width: 86px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 0 2px 3px rgb(0 0 0 / 30%);
+    color: #d9d9d9;
+    line-height: 35px;
+}
+
+.ContentOne .storeNav .store {
+    display: inline;
+    width: 76px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ContentOne .storeNav .new {
+    display: inline;
+    width: 103px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 77px;
+}
+
+.ContentOne .storeNav .kind {
+    display: inline;
+    width: 77px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+.ContentOne .storeNav .store:hover~.secondOne {
+    display: flex;
+}
+
+.ContentOne .storeNav .secondOne:hover {
+    display: flex;
+}
+
+.ContentOne .storeNav .store:hover~ul > .yourStore {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+}
+
+.ContentOne .storeNav .new:hover~.secondTwo {
+    display: flex;
+}
+
+.ContentOne .storeNav .secondTwo:hover {
+    display: flex;
+}
+
+.ContentOne .storeNav .new:hover~ul > .news {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+}
+
+.ContentOne .storeNav .kind:hover~.secondThree {
+    display: flex;
+}
+
+.ContentOne .storeNav .secondThree:hover {
+    display: flex;
+}
+
+.ContentOne .storeNav ul li:nth-child(2) {
+    width: 86px;
+    padding: 0 6px 0 11px;
+}
+
+.ContentOne .storeNav ul li:nth-child(3) {
+    width: 56px;
+    padding: 0 6px 0 15px;
+}
+
+.ContentOne .storeNav ul li img {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-right: -10px;
+}
+
+.ContentOne .storeNav ul li:not(.emptyNav, .search):hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+}
+
+.ContentOne .storeNav ul .emptyNav {
+    width: 61%;
+}
+
+.ContentOne .storeNav ul .search {
+    width: 205px;
+    height: 35px;
+
+}
+
+.ContentOne .storeNav ul li .searchFor {
+    background-color: #316282;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0 rgb(255 255 255 / 20%);
+    height: 25px;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-top: 5px;
+    position: relative;
+}
+
+.ContentOne .storeNav ul li .searchFor:hover {
+    border: 1px solid blue;
+}
+
+.ContentOne .storeNav ul li input {
+    height: 27px;
+    width: calc(100% - 25px - 8px);
+    color: #081116;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 rgb(255 255 255 / 10%);
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 0;
+    font-style: italic;
+    margin-left: 8px;
+}
+
+.ContentOne .storeNav ul li .searchFor img {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    right: 11px;
+}
+
+.ContentOne .storeNav .secondOne {
+    width: 177px;
+    height: 126px;
+    background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 5px;
+    box-shadow: 0 0 12px #000000;
+    display: none;
+}
+
+.ContentOne .storeNav .secondTwo {
+    width: 177px;
+    height: 156px;
+    background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+    position: absolute;
+    top: 35px;
+    left: 76px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 5px;
+    box-shadow: 0 0 12px #000000;
+    display: none;
+}
+
+.ContentOne .storeNav .secondThree {
+    width: 940px;
+    height: 560px;
+    background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 5px;
+    box-shadow: 0 0 12px #000000;
+    display: none;
+    color: #d9d9d9;
+}
+.ContentOne .storeNav .secondOne > a {
+    color: #D8D8D8;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    margin: 6px 0 6px 15px;
+
+}
+
+.ContentOne .storeNav .secondTwo > a {
+    color: #D8D8D8;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    margin: 6px 0 6px 15px;
+}
+
+.ContentOne .storeNav .secondOne > a:hover {
+    text-decoration: 2px underline white;
+}
+
+.ContentOne .storeNav .secondTwo > a:hover {
+    text-decoration: 2px underline white;
+}
+/* 内容 */
+.background {
+    width: 1200px;
+    height: 1050px;
+    /* background-color: rgb(76, 61, 161); */
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.SaleTextCtn {
+    font-size: 18px;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin: 0 auto;
+}
+.content ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content li {
+    /* background-color: gray; */
+    width: 300px;
+    height: 150px;
+    margin: 50px 10px;
+}
+.content li img {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+.btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    margin: 0 75px;
+    color: var(--btn-bg-color);
+    box-shadow: 0 0 20px rgba(71, 184, 255, 0.5), 0 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+    background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+        transition: linear;
+    }
+}
+
+.xiari {
+    font-size: 50px;
+    text-align: center;
+    color:black;
+    font-weight:bold;
+    letter-spacing: 15px;
+}
+/* 页脚 */
+#footer_spacer {
+    position: relative;
+    height: 210px;
+    top: auto;
+    bottom: auto;
+    padding: 0;
+    background-color: #1D2024;
+}
+#footer {
+    font-family: "arial, helvetica, sans-serif";
+    background: #171a21;
+    left: 0;
+    width: 100%;
+    height: 183px;
+
+    -webkit-text-size-adjust: none;
+}
+
+.footer_content {
+    top: 55px;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#footer_logo img {
+    height: 25px;
+    width: auto;
+}
+
+.rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+#footer_logo {
+    float: left;
+    padding-top: 2px;
+}
+
+#footer_logo_steam {
+    float: right;
+    padding: 2px;
+}
+
+#footer #footer_text {
+    float: left;
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8F98A0;
+}
+
+#footer #footer_text a {
+    color: #C6D4DF;
+}
+
+#footer #footer_text a:hover {
+    color: #FFFFFF;
+}
+
+.valve_links {
+    margin-top: 8px;
+    float: left;
+    font-family: "microsoft sans serif";
+    font-weight: normal;
+    font-size: 13px;
+    color: #61686d;
+}
+
+.valve_links a {
+    color: #C6D4DF;
+}
+
+.valve_links a:hover {
+    color: #FFFFFF;
+}

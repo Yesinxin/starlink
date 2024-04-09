@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>禮物卡</title>
+        <!-- 导入网页logo -->
+        <link rel="icon" href="../src/Frame 48.svg">
+        <!-- 导入清除全局样式 -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- 导入本项目css文件 -->
+        <link rel="stylesheet" href="数字礼物卡.css">
+    </head>
+    <body>
+        <!-- Head 页首 导航栏 -->
+        <div class="header">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../src/Frame 48.svg" width="206" height="44">
+                    </a>
+                </div>
+                <!-- 菜单栏 -->
+                <div class="supernav_container">
+                    <div class="con">
+                        <a class="menuitem shop " href="#">
+                            <span>商店</span></a>
+                        <div class="xl">
+                            <div class="submenu_content">
+                                <a class="submenuitem" href="#">主頁</a>
+                                <a class="submenuitem" href="#">搜索</a>
+                                <a class="submenuitem" href="#">願望清單</a>
+                                <a class="submenuitem" href="#">個人資料</a>
+                                <a class="submenuitem" href="#">新聞</a>
+                                <a class="submenuitem" href="#">數據</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons">
+                        <a class="menuitem community " href="steam 社区.html">社區</a>
+                        <div class="xl2">
+                            <div class="submenu_content">
+                                <a class="submenuitem" href="#">主頁</a>
+                                <a class="submenuitem" href="#">討論</a>
+                                <a class="submenuitem" href="#">工坊</a>
+                                <a class="submenuitem" href="#">市場</a>
+                                <a class="submenuitem" href="#">直播</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menuitem supernav" href="../关于/steam.html">關於</a>
+                <a class="menuitem supernav" href="../wu.html">客服</a>
+                <!-- 菜单栏下拉框 -->
+            </div>
+            <div class="actions">
+                <div class="action_menu">
+                    <div class="header_installsteam_btn header_installsteam_btn_green">
+                        <a class="header_installsteam_btn_content" href="关于/steam.html">SET UP</a>
+                    </div>
+                    <a class="action_link" href="login.html">登陸</a>
+                    &nbsp;|&nbsp;
+                    <div class="pulldowns" onclick="show()">
+                        <span class="pulldown action_link" id="language_pulldown">语言</span>
+                        <div class="popup_block_new" id="language_dropdown">
+                            <div class="popup_body popup_menu">
+                                <a class="popup_menu_item tight" href="#">简体中文</a>
+                                <a class="popup_menu_item tight" href="#">繁體中文（繁体中文）</a>
+                                <a class="popup_menu_item tight" href="#">日本語（日语））</a>
+                                <a class="popup_menu_item tight" href="#">한국어（韩语））</a>
+                                <a class="popup_menu_item tight" href="#">ไทย（泰语））</a>
+                                <a class="popup_menu_item tight" href="#">български（保加利亚语）</a>
+                                <a class="popup_menu_item tight" href="#">Čeština（捷克语）</a>
+                                <a class="popup_menu_item tight" href="#">Dansk（丹麦语）</a>
+                                <a class="popup_menu_item tight" href="#">Deutsch（德语）</a>
+                                <a class="popup_menu_item tight" href="#">English（英语）</a>
+                                <a class="popup_menu_item tight" href="#">Español-España（西班牙语 - 西班牙）</a>
+                                <a class="popup_menu_item tight" href="#">Español - Latinoamérica（西班牙语 - 拉丁美洲）</a>
+                                <a class="popup_menu_item tight" href="#">Ελληνικά（希腊语）</a>
+                                <a class="popup_menu_item tight" href="#">Français（法语）</a>
+                                <a class="popup_menu_item tight" href="#">Italiano（意大利语）</a>
+                                <a class="popup_menu_item tight" href="#">Magyar（匈牙利语）</a>
+                                <a class="popup_menu_item tight" href="#">Nederlands（荷兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Norsk（挪威语）</a>
+                                <a class="popup_menu_item tight" href="#">Polski（波兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Português（葡萄牙语）</a>
+                                <a class="popup_menu_item tight" href="#">Português-Brasil（葡萄牙语 - 巴西）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Română（罗马尼亚语）</a>
+                                <a class="popup_menu_item tight" href="#">Русский（俄语）</a>
+                                <a class="popup_menu_item tight" href="#">Suomi（芬兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Svenska（瑞典语）</a>
+                                <a class="popup_menu_item tight" href="#">Türkçe（土耳其语））</a>
+                                <a class="popup_menu_item tight" href="#">Tiếng Việt（越南语）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Українська（乌克兰语）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Українська报告翻译问题</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 这里搜索栏 -->
+
+    <div class="beijing ">
+        <div class="ContentOne">
+            <div class="zitis">
+                &nbsp;
+            </div>
+            <div class="storeNav">
+                <div class="store"></div>
+                <div class="new"></div>
+                <div class="kind"></div>
+                <ul>
+                    <li class="yourStore">您的商店</li>
+                    <li class="news">
+                        新鲜推荐
+                    </li>
+                    <li >
+                        類別
+                    </li>
+                    <li>商店</li>
+                    <li>新聞</li>
+                    <li>實驗室</li>
+                    <li class="emptyNav">
+                        <div></div>
+                    </li>
+                    <li class="search">
+                        <div class="searchFor">
+                            <input type="text" placeholder="搜索" size="22" autocomplete="off">
+                            <img src="../steam/search_icon_btn.png" alt="">
+                        </div>
+
+                    </li>
+                </ul>
+
+				<div class="secondOne">
+                    <a href="#">主頁</a>
+                    <a href="#">社區推薦</a>
+                </div>
+                <div class="secondTwo">
+                    <a href="#">熱銷</a>
+                    <a href="#">新品</a>
+                    <a href="#">特惠</a>
+                    <a href="#">最近更新</a>
+                    <a href="#">即將推出</a>
+                </div>
+                <div class="secondThree">
+                    <div>
+                        免費開玩
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="juzhong">
+            <div>
+				<h2 class="pageheader">STAR 禮物卡</h2>
+				<h2>送給親朋好友遊戲的絕佳選擇。 </h2>
+            </div>
+
+            <div class="rightcol"></div>
+            <div style="clear: both;"></div>
+            <div>
+                <div class="giftcard_leftcol">
+                    <img
+                        style="width:448px;height:auto;max-width:100%;"
+                        src="../src/Black and Gold Simple Gift Tag (1).png">
+                </div>
+                <div class="giftcard_rightcol">
+
+                    <div class="giftcard_inner_leftcol">
+                        <div>
+                            <div class="card_header">點數兌換卷</div>
+                            <p class="card_desc_text">
+                                <br>
+                                會員錢包直接充值。</p>
+                            <p class="card_desc_text">您只需登入帳號，選擇我們好<br>
+								友及送禮金額，剩下的就交給我們吧！</p>
+                            <div class="friendslist_image">
+                                <img
+                                    src="https://store.akamai.steamstatic.com/public/images/gift/steamcards_friends_02.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giftcard_inner_rightcol">
+                        <div>
+                            <div class="card_header">兌換實體禮物卡</div>
+                            <a class="btnv6_blue_hoverfade btn_medium" href="#">
+                                <span>Click here</span></a>
+                        </div>
+                        <div>
+							<div class="card_header">實體禮物卡</div>
+							<p class="card_desc_text">當您需要送出實體禮物的時候，可在全球範圍內的零售商店購買多種面額的 STEAMLINK 禮物卡。 </p>
+							<p class="card_desc_text">當您想用現金在STAR LINK上消費的時候，實體禮物卡也是一個不錯的選擇。 </p>
+							<span>在您的地區中尋找</span></a>
+                    </div>
+                </div>
+
+                <div style="clear: both;"></div>
+
+                <div>
+					<div class="card_header">關於禮物卡</div>
+					<p class="card_desc_text"> 禮物卡就像禮物憑證，可在上兌換，用於購買遊戲、軟體、硬體以及任何其他可在 Steam 購買的物品。
+					</p>
+					<a class="btnv6_blue_hoverfade btn_medium" href="#">
+						<span>
+							了解更多禮物卡的資訊</span></a><br>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+<!-- Foot 页脚 -->
+<!-- Footer -->
+<!-- <div id="footer_spacer" style="" class="small_footer"></div> -->
+<div id="footer" class="small_footer">
+    <div class="footer_content">
+
+        <div class="rule"></div>
+        <div id="footer_logo_steam"><img
+            src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png"
+            alt="Valve Software"
+            border="0"/></div>
+
+        <div id="footer_logo">
+            <a href="#" target="_blank" rel="noreferrer"><img
+                src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png"
+                alt="Valve Software"
+                border="0"/></a>
+        </div>
+        <div id="footer_text">
+            <div>©2022 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
+            <div>所有的价格均已包含增值税（如适用）。&nbsp;&nbsp;
+                <a href="#" target="_blank" rel="noreferrer">隐私政策</a>
+                &nbsp; | &nbsp;
+                <a href="#" target="_blank" rel="noreferrer">法律信息</a>
+                &nbsp; | &nbsp;
+                <a href="#" target="_blank" rel="noreferrer">Steam 订户协议</a>
+                &nbsp; | &nbsp;
+                <a href="#" target="_blank" rel="noreferrer">退款</a>
+                &nbsp; | &nbsp;
+                <a href="#" target="_blank" rel="noreferrer">Cookie</a>
+            </div>
+            <div class="responsive_optin_link">
+                <div
+                    class="btn_medium btnv6_grey_black"
+                    onclick="Responsive_RequestMobileView()">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        <div style="clear: left;"></div>
+        <br>
+        <div class="rule"></div>
+        <div
+            class="valve_links"
+            data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+            <a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">关于 Valve</a>
+            &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">工作机会</a>
+            &nbsp; | &nbsp;<a
+                href="http://www.steampowered.com/steamworks/"
+                target="_blank"
+                rel="noreferrer">Steamworks</a>
+            &nbsp; | &nbsp;<a
+                href="https://partner.steamgames.com/steamdirect"
+                target="_blank"
+                rel="noreferrer">Steam 分销</a>
+            &nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">客服</a>
+            &nbsp; | &nbsp;<a
+                href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_"
+                target="_blank"
+                rel="noreferrer">礼物卡</a>
+            &nbsp; | &nbsp;<a
+                href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"
+                target="_blank"
+                rel="noopener"><img
+                src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif">
+                Steam</a>
+            &nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img
+                src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif">
+                @steam</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+/* 语言下拉框固定悬浮 */
+var state = true;
+
+function show() {
+    if (state == true) {
+        document
+            .getElementById("language_dropdown")
+            .style
+            .display = "block";
+        state = !state;
+    } else if (state == false) {
+        document
+            .getElementById("language_dropdown")
+            .style
+            .display = "none";
+        state = !state;
+    }
+}
+</script>
+</html>

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            社區
+        </title>
+        <!-- 导入网页logo -->
+        <link rel="icon" href="../src/Frame 48.svg">
+        <!-- 导入清除全局样式 -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- 导入本项目css文件 -->
+        <link rel="stylesheet" href="steam 社区.css">
+    </head>
+    <body>
+        <!-- Head 页首 导航栏 -->
+        <div class="header">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../src/Frame 48.svg" width="176" height="44">
+                    </a>
+                </div>
+                <!-- 菜单栏 -->
+                <div class="supernav_container">
+                    <div class="con">
+                        <a class="menuitem shop " href="欢迎来到 Steam.html">
+                            <span>商店</span></a>
+                        <div class="xl">
+                            <div class="submenu_content">
+                                <a class="submenuitem" href="#">主頁</a>
+                                <a class="submenuitem" href="#">搜索</a>
+                                <a class="submenuitem" href="#">願望清單</a>
+                                <a class="submenuitem" href="#">個人資料</a>
+                                <a class="submenuitem" href="#">新聞</a>
+                                <a class="submenuitem" href="#">數據</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cons">
+                        <a class="menuitem community " href="steam 社区.html">社區</a>
+                        <div class="xl2">
+                            <div class="submenu_content">
+                                <a class="submenuitem" href="#">主頁</a>
+                                <a class="submenuitem" href="#">討論</a>
+                                <a class="submenuitem" href="#">工坊</a>
+                                <a class="submenuitem" href="#">市場</a>
+                                <a class="submenuitem" href="#">直播</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menuitem supernav" href="../关于/steam.html">關於</a>
+                <a class="menuitem supernav" href="../wu.html">客服</a>
+                <!-- 菜单栏下拉框 -->
+            </div>
+            <div class="actions">
+                <div class="action_menu">
+                    <div class="header_installsteam_btn header_installsteam_btn_green">
+                        <a class="header_installsteam_btn_content" href="">安装</a>
+                    </div>
+                    <a class="action_link" href="../login.html">Log in</a>
+                    &nbsp;|&nbsp;
+                    <div class="pulldowns" onclick="show()">
+                        <span class="pulldown action_link" id="language_pulldown">語言</span>
+                        <div class="popup_block_new" id="language_dropdown">
+                            <div class="popup_body popup_menu">
+                                <a class="popup_menu_item tight" href="#">简体中文</a>
+                                <a class="popup_menu_item tight" href="#">繁體中文（繁体中文）</a>
+                                <a class="popup_menu_item tight" href="#">日本語（日语））</a>
+                                <a class="popup_menu_item tight" href="#">한국어（韩语））</a>
+                                <a class="popup_menu_item tight" href="#">ไทย（泰语））</a>
+                                <a class="popup_menu_item tight" href="#">български（保加利亚语）</a>
+                                <a class="popup_menu_item tight" href="#">Čeština（捷克语）</a>
+                                <a class="popup_menu_item tight" href="#">Dansk（丹麦语）</a>
+                                <a class="popup_menu_item tight" href="#">Deutsch（德语）</a>
+                                <a class="popup_menu_item tight" href="#">English（英语）</a>
+                                <a class="popup_menu_item tight" href="#">Español-España（西班牙语 - 西班牙）</a>
+                                <a class="popup_menu_item tight" href="#">Español - Latinoamérica（西班牙语 - 拉丁美洲）</a>
+                                <a class="popup_menu_item tight" href="#">Ελληνικά（希腊语）</a>
+                                <a class="popup_menu_item tight" href="#">Français（法语）</a>
+                                <a class="popup_menu_item tight" href="#">Italiano（意大利语）</a>
+                                <a class="popup_menu_item tight" href="#">Magyar（匈牙利语）</a>
+                                <a class="popup_menu_item tight" href="#">Nederlands（荷兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Norsk（挪威语）</a>
+                                <a class="popup_menu_item tight" href="#">Polski（波兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Português（葡萄牙语）</a>
+                                <a class="popup_menu_item tight" href="#">Português-Brasil（葡萄牙语 - 巴西）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Română（罗马尼亚语）</a>
+                                <a class="popup_menu_item tight" href="#">Русский（俄语）</a>
+                                <a class="popup_menu_item tight" href="#">Suomi（芬兰语）</a>
+                                <a class="popup_menu_item tight" href="#">Svenska（瑞典语）</a>
+                                <a class="popup_menu_item tight" href="#">Türkçe（土耳其语））</a>
+                                <a class="popup_menu_item tight" href="#">Tiếng Việt（越南语）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Українська（乌克兰语）</a>
+                                <a class="popup_menu_item tight" href="#">return false;">Українська报告翻译问题</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 社区 -->
+    <div class="headers">
+        <div class="containers">
+            <div class="box"></div>
+            <div class="title">社區活動</div>
+            <div class="subtitle">Steam 上所有遊戲與軟體的社群和官方內容。
+            </div>
+            <div class="hidden">
+                <div class="shortcuts">
+                    <div class="login">
+                        <div class="login_content">
+                            歡迎來到社區
+                        </div><br>
+                        登入社群尋找更多的中心來瀏覽。
+                        <div class="builtin">
+                            <a href="../login.html" class="green" style="float: left;">
+                                <span>登入</span>
+                            </a>
+                            <div class="huo">
+                                或
+                            </div>
+                            <a href="../login.html" class="greens" style="float: left;">
+                                <span>加入我們</span>
+                            </a>
+                            <div style="clear: left;"></div>
+                        </div>
+                        <div class="shiyong">
+                            首次使用?
+                            <a href="#">了解更多</a>
+                            。
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list_header">熱門的中心</div>
+                        <div class="appHubShortcut">
+                            <a href="#">
+                                <img
+                                    類別="“appHubShortcut_Icon”"
+                                    src="../steam/e3f595a92552da3d664ad00277fad2107345f743.jpg">
+                            </a>
+                            <a href="#" class="appHubShortcut_Title">軍團要塞 2</a>
+                            <div class="new_items_num 省略號">
+                                210幅新藝術作品
+                                <span class="benzhou">本週</span>
+                            </div>
+                        </div>
+                        <div class="kong"></div>
+                        <div class="appHubShortcut">
+                            <a href="#">
+                                <img
+                                    類別="“appHubShortcut_Icon”"
+                                    src="../steam/3556d515feda43281aabbcb1ab0d218dec46f807.jpg">
+                            </a>
+                            <a href="#" class="appHubShortcut_Title">屍體工廠</a>
+                            <div class="new_items_num 省略號">
+                                92 張新截圖
+                                <span class="benzhou">本週</span>
+                            </div>
+                        </div>
+                        <div class="kong"></div>
+                        <div class="appHubShortcut">
+                            <a href="#">
+                                <img
+                                    類別="“appHubShortcut_Icon”"
+                                    src="../steam/b42b46695d3e136415b340260e964034edfcb765.jpg">
+                            </a>
+                            <a href="#" class="appHubShortcut_Title">狼尾</a>
+                            <div class="new_items_num 省略號">
+                                2 張新截圖
+                                <span class="benzhou">本週</span>
+                            </div>
+                        </div>
+                        <div class="kong"></div>
+                        <div class="appHubShortcut">
+                            <a href="#">
+                                <img
+                                    類別="“appHubShortcut_Icon”"
+                                    src="../steam/69f7ebe2735c366c65c0b33dae00e12dc40edbe4.jpg">
+                            </a>
+                            <a href="#" class="appHubShortcut_Title">反恐精英：全球攻勢</a>
+                            <div class="new_items_num 省略號">
+                                415幅新藝術作品
+                                <span class="benzhou">本週</span>
+                            </div>
+                        </div>
+                        <div class="kong"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="search_box">
+                <div class="shortcuts">
+                    <div class="list_header">找中心</div>
+                    <div class="list_header_sousuo">
+                        <input id="" class="ziti" type="text" placeholder="搜尋產品" style="width: 257.1px">
+                        <input class="" type="image" src="../steam/search_icon_btn.png">
+                    </div>
+                    <div class="zhongjian"></div>
+                    <div class="list_header">找中心</div>
+                    <div class="list_header_sousuo">
+                        <input id="" class="ziti" type="text" placeholder="搜尋產品" style="width: 257.1px">
+                        <input class="" type="image" src="../steam/search_icon_btn.png">
+                    </div>
+                    <div class="shortcuts"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 導覽列 -->
+    <div class="tab">
+        <div class="containers">
+            <div class="tab_list">
+                <ul>
+                    <li class="current">全部</li>
+                    <li>截圖</li>
+                    <li>藝術作品</li>
+                    <li>實況直播</li>
+                    <li>影片</li>
+                    <li>創意工坊</li>
+                    <li>新聞</li>
+                    <li>指南</li>
+                    <li>評測</li>
+                </ul>
+            </div>
+            <div class="heixian"></div>
+            <div class="kong"></div>
+            <div class="tab_list1">
+                <ul>
+                    <li>正在檢視</li>
+                    <li class="zuiremeng">最熱門</li>
+                    <li class="zuixin">最新</li>
+                </ul>
+            </div>
+            <div class="tab_con">
+                <div class="item" style="display: block;">
+                    <div class="pinlun">
+                        有 5,509 人覺得這篇評測有價值
+                        <br>
+                        有 668 人覺得這篇評測很歡樂
+                        <img src="../steam/award_icon_blue.svg" alt="">
+                        <div class="thumb">
+                            <img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+                            <div class="title">推薦</div>
+                            <div class="hours">總時數 2.9 小時</div>
+                        </div>
+                        <div style="clear: left"></div>
+                        <div class="apphub_CardTextContent">
+                            <div class="date_posted">發佈於：6 月 13 日</div>
+                            懷著感恩的心情喜加一
+                        </div>
+                        <div class="kong_1"></div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tp">32</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun">
+                        有 985239 人覺得這篇評測有價值
+                        <br>
+                        有 64756 人覺得這篇評測很歡樂
+                        <img src="../steam/award_icon_blue.svg" alt="">
+                        <div class="thumb">
+                            <img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+                            <div class="title">推薦</div>
+                            <div class="hours">總時數 0.9 小時</div>
+                        </div>
+                        <div style="clear: left"></div>
+                        <div class="apphub_CardTextContent">
+                            <div class="date_posted">發佈於：6 月 13 日</div>
+                            免費取得的產品
+                        </div>
+                        <div class="kong_1"></div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tp">27</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun_2">
+                        有 1840 人覺得這篇評測有價值
+                        <br>
+                        有 401 人覺得這篇評測很歡樂
+                        <img src="../steam/award_icon_blue.svg" alt="">
+                        <div class="">
+                            <img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+                            <div class="title">推薦</div>
+                            <div class="hours">總時數 6.7 小時</div>
+                        </div>
+                        <div class="apphub_CardTextContent">
+                            <div class="date_posted">發佈於：6 月 13 日</div>
+                            免費領的 我是聰明逼
+                        </div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tps">27</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun_2">
+                        <div class="title">Dota 2：指南</div>
+                        <div class="tupian">
+                            7.31d (輔助) 自用5號位pom/potm，月女，白老虎
+                        </div>
+                        <div class="kong_1"></div>
+                        <div class="apphub_CardRating notRated">
+                            &nbsp;
+                        </div>
+                        <img src="../steam/award_icon_blue.svg" alt="">
+                        <div class="tps">23</div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">Dota 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun_2">
+                        <div class="title">Dota 2：指南</div>
+                        <div class="tupian">
+                            7.31d 法繫電狗出山20級無敵毒堵泉水
+                        </div>
+                        <div class="kong_2">
+                            1.前期和處理狗一樣出裝順序點金，電錘，飛鞋。 刷到14.5分鐘有了兩級大招之後看情況和隊友推塔 2.有了A之後叫上隊友把二塔推光 3.20級之後隨便玩
+                        </div>
+                        <div class="apphub_CardRating notRated">
+                            &nbsp;
+                        </div>
+                        <img src="../steam/award_icon_blue.svg" alt="">
+                        <div class="tps">23</div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">Dota 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/123 (1).jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/123 (2).jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="pinlun_3">
+                        <img src="../steam/法尔登法环jpg.jpg" alt="" width="924xp" height="520px">
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/123 (1).jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/123 (2).jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pinlun_3">
+                        <img src="../steam/艺术作品.jpg" alt="" width="924xp" height="520px">
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/俩人.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/ak.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/飞龙.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/恐怖.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/微光之境.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/飞船.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/采石场惊魂.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/小道.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/微光之境.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/飞船.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/飞龙.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/恐怖.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                    <div class="quanbu">
+                        <div class="pinlun">
+                            <img src="../steam/采石场惊魂.jpg" alt="" width="440px" height="287">
+                        </div>
+                        <div class="pinlun">
+                            <img src="../steam/小道.jpg" alt="" width="440px" height="287">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pinlun_4">
+                        <img src="../steam/1.jpg" alt="" width="609" height="609">
+                    </div>
+                    <div class="pinlun_5">
+                        <img src="../steam/2.jpg" alt="" width="293" height="299">
+                    </div>
+                    <div class="pinlun_5">
+                        <img src="../steam/3.jpg" alt="" width="293" height="299">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pinlun_3">
+                        <h1>没有</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pinlun_2">
+                        <div class="title">Dota 2：指南</div>
+                        <div class="tupian">
+							7.31d 法繫電狗出山20級無敵毒堵泉水
+						</div>
+						<div class="kong_2">
+							1.前期和處理狗一樣出裝順序點金，電錘，飛鞋。 刷到14.5分鐘有了兩級大招之後看情況和隊友推塔 2.有了A之後叫上隊友把二塔推光 3.20級之後隨便玩
+						</div>
+						<div class="apphub_CardRating notRated">
+							&nbsp;
+						</div>
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="tps">23</div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">Dota 2</a>
+							</div>
+						</div>
+					</div>
+					<div class="pinlun_2">
+						<div class="title">Dota 2：指南</div>
+						<div class="tupian">
+							<img src="../steam/下載 (1).jpg" alt="">
+							7.31d 法繫電狗出山20級無敵毒堵泉水
+						</div>
+						<div class="kong_2">
+							1.前期和處理狗一樣出裝順序點金，電錘，飛鞋。 刷到14.5分鐘有了兩級大招之後看情況和隊友推塔 2.有了A之後叫上隊友把二塔推光 3.20級之後隨便玩
+						</div>
+						<div class="apphub_CardRating notRated">
+							&nbsp;
+						</div>
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="tps">23</div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">Dota 2</a>
+							</div>
+						</div>
+					</div>
+					<div class="pinlun_2">
+						<div class="title">Dota 2：指南</div>
+						<div class="tupian">
+							7.31d 法繫電狗出山20級無敵毒堵泉水
+						</div>
+						<div class="kong_2">
+							1.前期和處理狗一樣出裝順序點金，電錘，飛鞋。 刷到14.5分鐘有了兩級大招之後看情況和隊友推塔 2.有了A之後叫上隊友把二塔推光 3.20級之後隨便玩
+						</div>
+						<div class="apphub_CardRating notRated">
+							&nbsp;
+						</div>
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="tps">23</div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">Dota 2</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pinlun">
+						有 5,509 人覺得這篇評測有價值
+						<br>
+						有 668 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="thumb">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 2.9 小時</div>
+						</div>
+						<div style="clear: left"></div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							懷著感恩的心情喜加一
+                        </div>
+                        <div class="kong_1"></div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tp">32</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun">
+						有 5,509 人覺得這篇評測有價值
+						<br>
+						有 668 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="thumb">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 2.9 小時</div>
+						</div>
+						<div style="clear: left"></div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							懷著感恩的心情喜加一
+						</div>
+						<div class="kong_1"></div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">ARK: Survival Evolved</a>
+								<div class="tp">32</div>
+							</div>
+						</div>
+					</div>
+					<div class="pinlun_2">
+						有 1840 人覺得這篇評測有價值
+						<br>
+						有 401 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 6.7 小時</div>
+						</div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							免費領的 我是聰明逼
+                        </div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tps">27</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="pinlun_2">
+						有 1840 人覺得這篇評測有價值
+						<br>
+						有 401 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 6.7 小時</div>
+						</div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							免費領的 我是聰明逼
+						</div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">ARK: Survival Evolved</a>
+								<div class="tps">27</div>
+							</div>
+						</div>
+					</div>
+					<div class="pinlun_2">
+						有 1840 人覺得這篇評測有價值
+						<br>
+						有 401 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 6.7 小時</div>
+						</div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							免費領的 我是聰明逼
+						</div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">ARK: Survival Evolved</a>
+								<div class="tps">27</div>
+							</div>
+						</div>
+					</div>
+					<div class="pinlun">
+						有 5,509 人覺得這篇評測有價值
+						<br>
+						有 668 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="thumb">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 2.9 小時</div>
+						</div>
+						<div style="clear: left"></div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							懷著感恩的心情喜加一
+                        </div>
+                        <div class="kong_1"></div>
+                        <div class="apphub_CardContentAuthorBlock tall">
+                            <div class="apphub_CardContentAppName">
+                                <a href="#">ARK: Survival Evolved</a>
+                                <div class="tp">32</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pinlun">
+						有 5,509 人覺得這篇評測有價值
+						<br>
+						有 668 人覺得這篇評測很歡樂
+						<img src="../steam/award_icon_blue.svg" alt="">
+						<div class="thumb">
+							<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+							<div class="title">推薦</div>
+							<div class="hours">總時數 2.9 小時</div>
+						</div>
+						<div style="clear: left"></div>
+						<div class="apphub_CardTextContent">
+							<div class="date_posted">發佈於：6 月 13 日</div>
+							懷著感恩的心情喜加一
+						</div>
+						<div class="kong_1"></div>
+						<div class="apphub_CardContentAuthorBlock tall">
+							<div class="apphub_CardContentAppName">
+								<a href="#">ARK: Survival Evolved</a>
+								<div class="tp">32</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Foot 页脚 -->
+    <!-- Footer -->
+    <!-- <div id="footer_spacer" style="" class="small_footer"></div> -->
+    <div id="footer" class="small_footer">
+        <div class="footer_content">
+
+            <div class="rule"></div>
+            <div id="footer_logo_steam"><img
+                src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png"
+                alt="Valve Software"
+                border="0"/></div>
+
+            <div id="footer_logo">
+                <a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"><img
+                    src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png"
+                    alt="Valve Software"
+                    border="0"/></a>
+            </div>
+            <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+                <div>©2022 Valve Corporation。 保留所有權利。 所有商標均為其在美國及其它國家/地區的各自持有者所有。 </div>
+                <div>所有的價格均已包含增值稅（如適用）。 &nbsp;&nbsp;
+                    <a href="#" target="_blank" rel="noreferrer">隱私權政策</a>
+                    &nbsp; | &nbsp;
+                    <a href="#" target="_blank" rel="noreferrer">法律資訊</a>
+                    &nbsp; | &nbsp;
+                    <a href="#" target="_blank" rel="noreferrer">訂戶協議</a>
+                    &nbsp; | &nbsp;
+                    <a href="#" target="_blank" rel="noreferrer">退款</a>
+                    &nbsp; | &nbsp;
+                    <a href="#" target="_blank" rel="noreferrer">Cookie</a>
+                </div>
+                <div class="responsive_optin_link">
+                    <div
+                        class="btn_medium btnv6_grey_black"
+                        onclick="Responsive_RequestMobileView()">
+                        <span>查看行動版網站</span>
+                    </div>
+                </div>
+
+            </div>
+            <div style="clear: left;"></div>
+            <br>
+            <div class="rule"></div>
+            <div
+                class="valve_links"
+                data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+                <a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">關於 Valve</a>
+                &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">工作機會</a>
+                &nbsp; | &nbsp;<a
+                    href="http://www.steampowered.com/steamworks/"
+                    target="_blank"
+                    rel="noreferrer">works</a>
+                &nbsp; | &nbsp;<a
+                    href="https://partner.steamgames.com/steamdirect"
+                    target="_blank"
+                    rel="noreferrer">分銷</a>
+                &nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">客服</a>
+                &nbsp; | &nbsp;<a
+                    href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_"
+                    target="_blank"
+                    rel="noreferrer">禮物卡</a>
+                &nbsp; | &nbsp;<a
+                    href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"
+                    target="_blank"
+                    rel="noopener"><img
+                    src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif">
+                    Steam</a>
+                &nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img
+                    src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif">
+                    @steam</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    /* 语言下拉框固定悬浮 */
+    var state = true;
+    function show() {
+        if (state == true) {
+            document
+                .getElementById("language_dropdown")
+                .style
+                .display = "block";
+            state = !state;
+        } else if (state == false) {
+            document
+                .getElementById("language_dropdown")
+                .style
+                .display = "none";
+            state = !state;
+        }
+    }
+    var lis = document
+        .querySelector('.tab_list')
+        .querySelectorAll('li');
+    var items = document.querySelectorAll('.item');
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].setAttribute('index', i);
+        lis[i].onclick = function () {
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].className = '';
+            }
+            this.className = 'current';
+
+            //以下是显示内容模块
+            var index = this.getAttribute('index');
+            console.log(index);
+            //排他,显示索引值相同的li
+            for (var i = 0; i < items.length; i++) {
+                items[i].style.display = 'none';
+            }
+            items[index].style.display = 'block';
+        }
+
+    }
+</script>
+</html>

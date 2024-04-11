@@ -1,6 +1,6 @@
 /* 背景颜色 */
 body {
-    background-image: linear-gradient(-45deg, rgb(0, 255, 255), rgb(109, 231, 223), rgb(35, 166, 213), rgb(151, 213, 211));
+    background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E);
     background-size: 400%;
     animation: bganimation 5s infinite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

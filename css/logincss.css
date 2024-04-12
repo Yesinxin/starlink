@@ -19,7 +19,7 @@
 body {
     align-items: center;
     background-color: var(--white);
-    background: url("../src/下載\ \(1\).jpeg");
+    background: url("../src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 
 .overlay {
     background-color: var(--lightblue);
-    background: url("../src/下載.jpeg");
+    background: url("../src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,6 +214,7 @@ a:hover::before{
     margin: 0.5rem 0;
     width: 100%;
 }
+
 
 @keyframes show {
     0%,

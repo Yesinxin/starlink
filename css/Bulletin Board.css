@@ -217,7 +217,7 @@ div.header .menuitem:hover {
     padding-left: 35px;
     padding-right: 9px;
     background-position: 10px 5px;
-    background-image: url("../steam/btn_header_installsteam_download.png");
+    background-image: url("./steam/btn_header_installsteam_download.png");
     background-repeat: no-repeat;
     text-decoration: none;
     color: #e5e4dc;
@@ -248,7 +248,7 @@ div.header .menuitem:hover {
     padding-left: 4px;
     line-height: 25px;
     padding-right: 18px;
-    background-image: url("../steam/btn_arrow_down_padded.png");
+    background-image: url("./steam/btn_arrow_down_padded.png");
     background-position: right center;
     background-repeat: no-repeat;
     cursor: pointer;

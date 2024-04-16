@@ -813,28 +813,29 @@ a:hover {
 }
 /* 热门VR游戏结束 */
 /* 内容第二段 */
-.ContentOne .ContentTwo {
+.ContentTwo {
     width: 100%;
     position: absolute;
     top: 1930px;
+    overflow: hidden;
 
     background: linear-gradient(to bottom, rgba(42, 71, 94, 1.0) 5%, rgba(42, 71, 94, 0.0) 70%);
 }
 
-.ContentOne .ContentTwo .hard {
+.ContentTwo .hard {
     width: 100%;
     height: 815px;
     background: transparent;
     margin: 0 auto;
 }
 
-.ContentOne .ContentTwo .hard .hardHeader {
+.ContentTwo .hard .hardHeader {
     height: 29px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.ContentOne .ContentTwo .hard .hardHeader > div {
+.ContentTwo .hard .hardHeader > div {
     padding: 3px 10px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -844,11 +845,11 @@ a:hover {
     vertical-align: top;
 }
 
-.ContentOne .ContentTwo .hard .hardHeader > div:hover {
+.ContentTwo .hard .hardHeader > div:hover {
     color: #FFFFFF;
 }
 
-.ContentOne .ContentTwo .hard .hardHeader > div:first-child {
+.ContentTwo .hard .hardHeader > div:first-child {
     padding: 3px 10px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -861,7 +862,7 @@ a:hover {
     box-shadow: none;
 }
 
-.ContentOne .ContentTwo .hard .hardContent {
+.ContentTwo .hard .hardContent {
     width: 618px;
     height: 771px;
     position: absolute;
@@ -869,7 +870,7 @@ a:hover {
     left: 175px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .contentHeader {
+.ContentTwo .hard .hardContent .contentHeader {
     background: rgba(0, 0, 0, 0.2);
     padding: 4px;
     text-align: right;
@@ -877,7 +878,7 @@ a:hover {
     font-size: 12px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .contentHeader > a {
+.ContentTwo .hard .hardContent .contentHeader > a {
     padding: 3px 15px;
     font-size: 12px;
     line-height: 24px;
@@ -888,11 +889,11 @@ a:hover {
     text-decoration: none;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .contentHeader > a:hover {
+.ContentTwo .hard .hardContent .contentHeader > a:hover {
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div {
+.ContentTwo .hard .hardContent .hardContentGame > div {
     width: 618px;
     height: 69px;
     background: rgba(0, 0, 0, 0.2);
@@ -900,7 +901,7 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div .gameName {
+.ContentTwo .hard .hardContent .hardContentGame > div .gameName {
     position: absolute;
     left: 200px;
     top: 3px;
@@ -909,14 +910,14 @@ a:hover {
     font-size: 14px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div .gameIcon {
+.ContentTwo .hard .hardContent .hardContentGame > div .gameIcon {
     position: absolute;
     left: 200px;
     top: 23px;
     opacity: 0.3;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div .label {
+.ContentTwo .hard .hardContent .hardContentGame > div .label {
     position: absolute;
     left: 200px;
     top: 43px;
@@ -924,7 +925,7 @@ a:hover {
     font-size: 12px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div .price {
+.ContentTwo .hard .hardContent .hardContentGame > div .price {
     position: absolute;
     right: 15px;
     top: 40%;
@@ -932,7 +933,7 @@ a:hover {
     font-size: 13px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:first-child {
+.ContentTwo .hard .hardContent .hardContentGame > div:first-child {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -940,20 +941,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:first-child .gameName {
+.ContentTwo .hard .hardContent .hardContentGame > div:first-child .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:first-child .gameIcon {
+.ContentTwo .hard .hardContent .hardContentGame > div:first-child .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:first-child .price {
+.ContentTwo .hard .hardContent .hardContentGame > div:first-child .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:hover {
+.ContentTwo .hard .hardContent .hardContentGame > div:hover {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -961,20 +962,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:hover .gameName {
+.ContentTwo .hard .hardContent .hardContentGame > div:hover .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:hover .gameIcon {
+.ContentTwo .hard .hardContent .hardContentGame > div:hover .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard .hardContent .hardContentGame > div:hover .price {
+.ContentTwo .hard .hardContent .hardContentGame > div:hover .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) {
+.ContentTwo .hard > div:nth-child(n+13) {
     width: 308px;
     height: 735px;
     background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
@@ -986,11 +987,11 @@ a:hover {
 
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+14) {
+.ContentTwo .hard > div:nth-child(n+14) {
     display: none;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .gameName {
+.ContentTwo .hard > div:nth-child(n+13) .gameName {
     font-size: 21px;
     letter-spacing: 0;
     color: #263645;
@@ -1002,7 +1003,7 @@ a:hover {
     margin: 2px 0 2px 15px;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .num {
+.ContentTwo .hard > div:nth-child(n+13) .num {
     width: 272px;
     height: 32px;
     padding: 5px 7px;
@@ -1015,17 +1016,17 @@ a:hover {
     flex-direction: column;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .num span {
+.ContentTwo .hard > div:nth-child(n+13) .num span {
     color: #c6d4df;
     font-size: 12px;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .num div {
+.ContentTwo .hard > div:nth-child(n+13) .num div {
     color: #66C0F4;
     font-size: 12px;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .label {
+.ContentTwo .hard > div:nth-child(n+13) .label {
     width: 292px;
     height: 22px;
     display: flex;
@@ -1033,7 +1034,7 @@ a:hover {
 
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) .label > div {
+.ContentTwo .hard > div:nth-child(n+13) .label > div {
     background-color: rgba(38, 54, 69, 0.6);
     padding: 0 7px;
     margin-right: 2px;
@@ -1045,13 +1046,13 @@ a:hover {
     color: #ffffff;
 }
 
-.ContentOne .ContentTwo .hard > div:nth-child(n+13) img {
+.ContentTwo .hard > div:nth-child(n+13) img {
     width: 274px;
     height: 150px;
     margin: 0 0 2px 15px;
 }
 
-.ContentOne .ContentTwo .hard > .right1 {
+.ContentTwo .hard > .right1 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1061,7 +1062,7 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) {
+.ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1069,20 +1070,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .gameName {
+.ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .gameIcon {
+.ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .price {
+.ContentTwo .hard > .right1:hover~.hardContent .hardContentGame > div:nth-child(1) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right2 {
+.ContentTwo .hard > .right2 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1092,11 +1093,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right2:hover~div:nth-child(14) {
+.ContentTwo .hard > .right2:hover~div:nth-child(14) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) {
+.ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1104,20 +1105,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .gameName {
+.ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .gameIcon {
+.ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .price {
+.ContentTwo .hard > .right2:hover~.hardContent .hardContentGame > div:nth-child(2) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right3 {
+.ContentTwo .hard > .right3 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1127,11 +1128,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right3:hover~div:nth-child(15) {
+.ContentTwo .hard > .right3:hover~div:nth-child(15) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) {
+.ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1139,20 +1140,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .gameName {
+.ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .gameIcon {
+.ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .price {
+.ContentTwo .hard > .right3:hover~.hardContent .hardContentGame > div:nth-child(3) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right4 {
+.ContentTwo .hard > .right4 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1162,11 +1163,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right4:hover~div:nth-child(16) {
+.ContentTwo .hard > .right4:hover~div:nth-child(16) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) {
+.ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1174,20 +1175,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .gameName {
+.ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .gameIcon {
+.ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .price {
+.ContentTwo .hard > .right4:hover~.hardContent .hardContentGame > div:nth-child(4) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right5 {
+.ContentTwo .hard > .right5 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1197,11 +1198,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right5:hover~div:nth-child(17) {
+.ContentTwo .hard > .right5:hover~div:nth-child(17) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) {
+.ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1209,20 +1210,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .gameName {
+.ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .gameIcon {
+.ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .price {
+.ContentTwo .hard > .right5:hover~.hardContent .hardContentGame > div:nth-child(5) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right6 {
+.ContentTwo .hard > .right6 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1232,11 +1233,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right6:hover~div:nth-child(18) {
+.ContentTwo .hard > .right6:hover~div:nth-child(18) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) {
+.ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1244,20 +1245,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .gameName {
+.ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .gameIcon {
+.ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .price {
+.ContentTwo .hard > .right6:hover~.hardContent .hardContentGame > div:nth-child(6) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right7 {
+.ContentTwo .hard > .right7 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1267,11 +1268,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right7:hover~div:nth-child(19) {
+.ContentTwo .hard > .right7:hover~div:nth-child(19) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) {
+.ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1279,20 +1280,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .gameName {
+.ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .gameIcon {
+.ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .price {
+.ContentTwo .hard > .right7:hover~.hardContent .hardContentGame > div:nth-child(7) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right8 {
+.ContentTwo .hard > .right8 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1302,11 +1303,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right8:hover~div:nth-child(20) {
+.ContentTwo .hard > .right8:hover~div:nth-child(20) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) {
+.ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1314,20 +1315,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .gameName {
+.ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .gameIcon {
+.ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .price {
+.ContentTwo .hard > .right8:hover~.hardContent .hardContentGame > div:nth-child(8) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right9 {
+.ContentTwo .hard > .right9 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1337,11 +1338,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right9:hover~div:nth-child(21) {
+.ContentTwo .hard > .right9:hover~div:nth-child(21) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) {
+.ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1349,20 +1350,20 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .gameName {
+.ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .gameIcon {
+.ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .price {
+.ContentTwo .hard > .right9:hover~.hardContent .hardContentGame > div:nth-child(9) .price {
     color: #263645;
     right: 29px;
 }
 
-.ContentOne .ContentTwo .hard > .right10 {
+.ContentTwo .hard > .right10 {
     width: 619px;
     height: 69px;
     position: absolute;
@@ -1372,11 +1373,11 @@ a:hover {
     z-index: 10;
 }
 
-.ContentOne .ContentTwo .hard > .right10:hover~div:nth-child(22) {
+.ContentTwo .hard > .right10:hover~div:nth-child(22) {
     display: flex;
 }
 
-.ContentOne .ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) {
+.ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) {
     width: 632px;
     height: 69px;
     background: linear-gradient(to left, #95bbd4 5%, #859bac 95%);
@@ -1384,27 +1385,27 @@ a:hover {
     position: relative;
 }
 
-.ContentOne .ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .gameName {
+.ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .gameName {
     color: #10161b;
 }
 
-.ContentOne .ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .gameIcon {
+.ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .gameIcon {
     color: #384959;
 }
 
-.ContentOne .ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .price {
+.ContentTwo .hard > .right10:hover~.hardContent .hardContentGame > div:nth-child(10) .price {
     color: #263645;
     right: 29px;
 }
 
 /* 内容第二段 结束*/
 /* 直播开始 */
-.ContentOne .ContentTwo .live {
+.ContentTwo .live {
     width: 940px;
     margin: 0 auto;
 }
 
-.ContentOne .ContentTwo .live .tittle {
+.ContentTwo .live .tittle {
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
@@ -1413,7 +1414,7 @@ a:hover {
     color: #fff;
 }
 
-.ContentOne .ContentTwo .live .man {
+.ContentTwo .live .man {
     width: 933px;
     height: 428px;
     margin: 0 5px 8px 0;
@@ -1422,33 +1423,33 @@ a:hover {
     justify-content: space-between;
 }
 
-.ContentOne .ContentTwo .live .man > div {
+.ContentTwo .live .man > div {
     height: 207px;
     width: 306px;
     background: rgba(255, 255, 255, 0.1);
     position: relative;
 }
 
-.ContentOne .ContentTwo .live .man > div img:not(.btn, .redcircle, .peopleHand) {
+.ContentTwo .live .man > div img:not(.btn, .redcircle, .peopleHand) {
     width: 100%;
     height: 142px;
 }
 
-.ContentOne .ContentTwo .live .man > div .btn {
+.ContentTwo .live .man > div .btn {
     position: absolute;
     left: 50%;
     margin-left: -40px;
     top: 40px;
 }
 
-.ContentOne .ContentTwo .live .man > div .redcircle {
+.ContentTwo .live .man > div .redcircle {
     width: 14px;
     height: 14px;
     margin-left: 3px;
     margin-top: 3px;
 }
 
-.ContentOne .ContentTwo .live .man > div .peopleHand {
+.ContentTwo .live .man > div .peopleHand {
     width: 17px;
     height: 17px;
     margin-left: 3px;
@@ -1456,7 +1457,7 @@ a:hover {
 
 }
 
-.ContentOne .ContentTwo .live .man > div .livesign {
+.ContentTwo .live .man > div .livesign {
     width: 52px;
     height: 19px;
     background-color: #000;
@@ -1469,11 +1470,11 @@ a:hover {
     top: 3px;
 }
 
-.ContentOne .ContentTwo .live .man > div:hover .livesign {
+.ContentTwo .live .man > div:hover .livesign {
     color: #66C0F4;
 }
 
-.ContentOne .ContentTwo .live .man > div .name {
+.ContentTwo .live .man > div .name {
     color: #c7d5e0;
     font-size: 13px;
     position: absolute;
@@ -1481,7 +1482,7 @@ a:hover {
     bottom: 10px;
 }
 
-.ContentOne .ContentTwo .live .man > div .people {
+.ContentTwo .live .man > div .people {
     padding-left: 28px;
     color: #c7d5e0;
     font-size: 13px;
@@ -1496,13 +1497,13 @@ a:hover {
 
 /* 直播结束 */
 /* 低于四十块开始 */
-.ContentOne .ContentTwo .fifteen {
+.ContentTwo .fifteen {
     width: 940px;
     height: 210px;
     margin: 0 auto;
 }
 
-.ContentOne .ContentTwo .fifteen .tittle {
+.ContentTwo .fifteen .tittle {
     font-size: 14px;
     color: #fff;
     letter-spacing: 0.03em;
@@ -1511,26 +1512,26 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Game {
+.ContentTwo .fifteen .content .Game {
     width: 940px;
     height: 134px;
     display: flex;
     justify-content: space-between;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Game > div {
+.ContentTwo .fifteen .content .Game > div {
     width: 229px;
     height: 134px;
     background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
     position: relative;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Game > div > img {
+.ContentTwo .fifteen .content .Game > div > img {
     width: 229px;
     height: 103px;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Game > div > div {
+.ContentTwo .fifteen .content .Game > div > div {
     position: absolute;
     right: 7px;
     bottom: 8px;
@@ -1541,7 +1542,7 @@ a:hover {
     font-size: 11px;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Point {
+.ContentTwo .fifteen .content .Point {
     width: 940px;
     height: 41px;
     position: absolute;
@@ -1549,7 +1550,7 @@ a:hover {
     text-align: center;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Point > div {
+.ContentTwo .fifteen .content .Point > div {
     display: inline-block;
     margin: 45px auto;
     width: 15px;
@@ -1560,22 +1561,22 @@ a:hover {
     font-size: 12px;
 }
 
-.ContentOne .ContentTwo .fifteen .content .Point > div:hover {
+.ContentTwo .fifteen .content .Point > div:hover {
     background-color: hsla(202, 60%, 100%, 0.3);
 }
 
-.ContentOne .ContentTwo .fifteen .content .Point > div:first-child {
+.ContentTwo .fifteen .content .Point > div:first-child {
     background-color: hsla(202, 60%, 100%, 0.6);
 }
 /* 低于四十块结束 */
 */
 /* 更新与优惠开始 */
-.ContentOne .ContentTwo .updata {
+.ContentTwo.updata {
     width: 940px;
     height: 460px;
 }
 
-.ContentOne .ContentTwo .updata .tittle {
+.ContentTwo .updata .tittle {
     font-size: 14px;
     color: #fff;
     letter-spacing: 0.03em;
@@ -1585,33 +1586,33 @@ a:hover {
 
 }
 
-.ContentOne .ContentTwo .updata .content {
+.ContentTwo .updata .content {
     width: 940px;
     height: 422px;
     display: flex;
     margin: 0 auto;
 }
 
-.ContentOne .ContentTwo .updata .left {
+.ContentTwo .updata .left {
     width: 378px;
     height: 422px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
     cursor: pointer;
 }
 
-.ContentOne .ContentTwo .updata .left img {
+.ContentTwo .updata .left img {
     width: 378px;
     height: 398px;
 }
 
-.ContentOne .ContentTwo .updata .left > div {
+.ContentTwo .updata .left > div {
     text-align: right;
     color: #ACDBF5;
     font-size: 12px;
     margin-right: 3px;
 }
 
-.ContentOne .ContentTwo .updata .right {
+.ContentTwo .updata .right {
     width: 562px;
     height: 422px;
     display: flex;
@@ -1619,26 +1620,26 @@ a:hover {
     cursor: pointer;
 }
 
-.ContentOne .ContentTwo .updata .right > div {
+.ContentTwo .updata .right > div {
     width: 173px;
     height: 206px;
     margin: 0 0 10px 10px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
 }
 
-.ContentOne .ContentTwo .updata .right > div img {
+.ContentTwo .updata .right > div img {
     width: 173px;
     height: 182px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .discount {
+.ContentTwo .updata .right > div .price .discount {
     display: flex;
     line-height: 15px;
     justify-content: flex-end;
     margin-right: 5px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .discount > div:first-child {
+.ContentTwo .updata .right > div .price .discount > div:first-child {
     color: #a4d007;
     background: #4c6b22;
     height: 15px;
@@ -1648,7 +1649,7 @@ a:hover {
     font-size: 11px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices {
+.ContentTwo .updata .right > div .price .prices {
 
     height: 15px;
     padding: 0 5px 0 7px;
@@ -1657,7 +1658,7 @@ a:hover {
     align-items: flex-start;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices > div:first-child {
+.ContentTwo .updata .right > div .price .prices > div:first-child {
     color: #7193a6;
     text-decoration: line-through;
     font-size: 11px;
@@ -1665,7 +1666,7 @@ a:hover {
     height: 13px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices > div:last-child {
+.ContentTwo .updata .right > div .price .prices > div:last-child {
     color: #acdbf5;
     font-size: 13px;
     line-height: 13px;

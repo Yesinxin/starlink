@@ -19,7 +19,7 @@
 body {
     align-items: center;
     background-color: var(--white);
-    background: url("../src/acctt_creation_bg.png");
+    background: url("./src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 
 .overlay {
     background-color: var(--lightblue);
-    background: url("../src/acctt_creation_bg.png");
+    background: url("./src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

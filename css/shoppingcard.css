@@ -1,0 +1,489 @@
+/* 头部导航栏样式 */
+body{
+		    position: relative;
+		    min-height: 100%;
+		    font-family: Arial, Helvetica, sans-serif;
+		    color: #c6d4df;
+		    font-size: 12px;
+}
+.header{
+
+		background: #171a21;
+		
+}
+.header{
+
+	    background-position: center top;
+	    min-width: 940px;
+		height: 104px;
+	    font-family: "Motiva Sans", Sans-serif;
+	    font-weight: normal;
+		font-size: 14px;
+}
+div.header{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.content{
+	right: 0;
+	position: relative;
+	width: 940px;
+	height: 104px;
+	margin: 0 auto;
+	transition: right 0.25s;
+	z-index: 402;
+}
+.logo{
+	padding-top: 30px;
+	margin-right: 40px;
+	float: left;
+	width: 176px;
+	height: 44px;
+	color: #0000FF;
+}
+/* 导航栏菜单栏 */
+.supernav_container{
+	position: absolute;
+	width: 168px;
+	left: 200px;
+}
+
+div.header .menuitem{
+	    position: relative;
+	    padding-top: 45px;
+	    padding-left: 7px;
+	    padding-right: 7px;
+	    padding-bottom: 7px;
+	    line-height: 16px;
+	    float: left;
+	    font-size: 14px;
+	    color: #b8b6b4;
+	    text-transform: uppercase;
+}
+/* 菜单栏字体悬停样式 */
+div.header .menuitem:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+/* 菜单下拉框 */
+.xl{
+		display: none;
+	position: absolute;
+	width: 88px;
+	top: 90%;
+	left: 0%;
+	background: #000;
+	padding: 5px 15px 10px 15px;
+	box-shadow: 3px 3px 5px -3px #000;
+	text-align: left;
+	 z-index: 500;
+}
+/* 菜单栏下拉框2 */
+.xl2{
+	display: none;
+	position: absolute;
+	width: 88px;
+	top: 90%;
+	left: 30%;
+	background: #000;
+	padding: 5px 15px 10px 15px;
+	box-shadow: 3px 3px 5px -3px #000;
+	text-align: left;
+	 z-index: 500;
+}
+/* 下拉框距离左边间距 */
+.submenu_content{
+	margin-left: 15px;
+}
+/* 菜单下拉框字体颜色 */
+.submenuitem{
+	color: #ffffff;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/* 菜单栏下拉框字体悬浮 */
+.con:hover .xl{
+	display: block;
+	height: 179px;
+	padding: 6px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	opacity: 1;
+}
+/* 下拉框2 */
+.cons:hover .xl2{
+	display: block;
+	height: 188px;
+	padding: 6px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	opacity: 1;
+}
+.xl2:hover {
+	color: #ffffff;
+}
+.submenu_content .submenuitem:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.supernav_content{
+display: none;
+	height: 0px;
+	transition: .2s;
+	opacity: 0;
+	transform: translateY(-189);
+	background: #000;
+}
+/* 下拉框字体样式 */
+.submenuitem{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #b8b6b4;
+	padding-right: 10px;
+	padding: 6px 10px 6px 0;
+	transition: height .25s;
+	overflow: hidden;
+	display: block;
+}
+/* Steam下载安装 */
+.actions{
+	position: absolute;
+	right: 0px;
+	top: 6px;
+	height: 21px;
+	line-height: 21px;
+	color: #b8b6b4;
+	font-size: 11px;
+	z-index: 400;
+}
+.action_menu{
+	position: relative;
+	line-height: 24px;
+	vertical-align: top;
+	display: inline-block;
+}
+.action_menu > *{
+	vertical-align: top;
+}
+.header_installsteam_btn{
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 24px;
+	margin-right: 3px;
+}
+/* 安装背景 */
+.header_installsteam_btn_content{
+	background-color: #5c7e10;
+}
+/* 安装样式设置 */
+.header_installsteam_btn_content{
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 9px;
+	background-position: 10px 5px;
+	background-image: url(../img/主页/btn_header_installsteam_download.png);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #e5e4dc;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+/* 登录 */
+.action_link{
+	color: #b8b6b4;
+	padding: 0 4px;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+.actions > *{
+	vertical-align: top;
+}
+.actions a:hover{
+	color: #FFFFFF;
+}
+.actions span:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+/* 语言 */
+.pulldown{
+	display: inline-block;
+	padding-left: 4px;
+	line-height: 25px;
+	padding-right:18px;
+	background-image: url(../img/主页/btn_arrow_down_padded.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+.pulldowns{
+	display: inline-block;
+}
+/* 语言下拉框 */
+.popup_block_new .popup_body{
+	border: 1px solid #171a21;
+	position: relative;
+	background-color: #171a21;
+}
+.action_menu > *{
+	vertical-align: top;
+}
+.popup_block_new{
+	display: none;
+	z-index: 200;
+	position: absolute;
+	box-shadow: 0 0 12px #000000;
+	right: 0%;
+}
+/* 语言下拉框悬浮 */
+/* 语言文字 */
+.popup_menu_item{
+	top: 5%;
+		display: block;
+	    padding: 5px 12px;
+	    color: #b8b6b4;
+	   text-transform: none;
+	    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+	    font-size: 12px;
+	    font-weight: normal;
+	    line-height: normal;
+	    text-align: left;
+	    cursor: pointer;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+}
+
+
+
+/* 客服css */
+.body {
+	height: 1350px;
+	width: 100%;
+	background-image: linear-gradient(to right,  #000F18,#063781,#3D4450,#000F18);
+	position: relative;
+}
+.wizard_content_wrapper {
+	width: 950px;
+	height: 1232px;
+	position: absolute;
+	left: 50%;
+	top: 25px;
+	margin-left: -475px;
+	
+}
+.help_intro_text {
+	color: #5eafde;
+	    font-size: 20px;
+	    margin: 16px 0px 20px 0px;
+	
+}
+.help_login_nag {
+	height: 100px;
+	    margin-top: 20px;
+	    margin-bottom: 30px;
+	    max-width: 684px;
+	    background: rgba( 0, 0, 0, 0.2 );
+	    padding: 14px;
+		
+}
+.help_login_nag_intro {
+	font-size: 13px;
+	    margin-bottom: 15px;
+	    margin-top: 10px;
+	    text-align: center;
+}
+.help_login_nag_left {
+	
+	    width: 220px;
+		height: 32px;
+	    min-width: 40%;
+	    display: inline-block;
+	    margin-bottom: 10px;
+		margin-left: 80px;
+		background-color: #67c1f5;
+}
+.btn_login_nag_left.btnv6_blue_hoverfade {
+	    background: #67c1f5;
+
+}
+.help_login_nag_left a {
+	color: #FFFFFF;
+	margin: 0 auto;
+	font-size: 15px;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 100px;
+}
+.help_login_nag_right {
+	width: 220px;
+	height: 32px;
+    min-width: 40%;
+    display: inline-block;
+    margin-bottom: 10px;
+	
+	background-color: #67c1f5;
+}
+.help_login_nag_right a{
+	color: #FFFFFF;
+	margin: 0 auto;
+	font-size: 15px;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 50px;
+	
+}
+.help_section_text {
+	    text-transform: uppercase;
+	    font-size: 14px;
+	    color: #5eafde;
+}
+.help_wizard_arrow_right {
+    background-image: url(https://help.steampowered.com/public/images/arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: auto 16px;
+	padding: 4px;
+}
+.help_wizard_button {
+    display: block;
+    max-width: 712px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-right: 30px;
+    border: solid 1px;
+    border-color: #445468;
+    font-size: 15px;
+    color: white;
+    background-color: #445468;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.help_divider {
+	    background-color: #3b718d;
+	    height: 1px;
+	    max-width: 712px;
+	    margin: 14px 0px;
+}
+/* 分各线以下 */
+
+.help_wizard_button {
+    display: block;
+    max-width: 712px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-right: 30px;
+    border: solid 1px;
+    border-color: #445468;
+    font-size: 15px;
+    color: white;
+    background-color: #445468;
+	
+}
+.help_wizard_button_large {
+	height: 64px;
+	line-height: 55px;
+}
+.kong {
+	padding-top: 60px;
+}
+.help_search_support_form{
+	margin-top: 5px;
+}
+#help_search_support_input {
+	    height: 54px;
+	    width: 712px;
+	    font-family: "Motiva Sans", Sans-serif;
+	    font-weight: 300;
+	    font-style: italic;
+	    font-size: 24px;
+	    color: #c6d4df;
+	    padding: 10px;
+	    background-color: #324965;
+	    border: 1px solid #000;
+	    box-shadow: 1px 1px 0 #45556c;
+	    box-sizing: border-box;
+}
+
+/* 页脚 */
+#footer_spacer{
+	position: relative;
+	height: 210px;
+	top: auto;
+	bottom: auto;
+	padding: 0px 0px 0px;
+	background-color: #1D2024;
+}
+#footer{
+	font-family: "arial, helvetica, sans-serif";
+	background: #171a21;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 183px;
+
+	-webkit-text-size-adjust: none;
+}
+.footer_content{
+	top: 55px;
+	width: 940px;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+#footer_logo img{
+	height: 25px;
+	width: auto;
+}
+.rule{
+	height: 8px;
+	border-top: 1px solid #363c44;
+}
+#footer_logo{
+	float: left;
+	padding-top: 2px;
+}
+#footer_logo_steam{
+	float: right;
+	padding: 2px;
+}
+#footer #footer_text{
+	float: left;
+	margin-left: 12px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #8F98A0;
+}
+#footer #footer_text a{
+	color: #C6D4DF;
+}
+#footer #footer_text a:hover{
+	color: #FFFFFF;
+}
+.valve_links{
+	margin-top: 8px;
+	float: left;
+	font-family: "microsoft sans serif";
+	font-weight: normal;
+	font-size: 13px;
+	color: #61686d;
+}
+.valve_links a{
+	color: #C6D4DF;
+}
+.valve_links a:hover{
+	color: #FFFFFF;
+}
+
+
+

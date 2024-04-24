@@ -19,7 +19,7 @@
 body {
     align-items: center;
     background-color: var(--white);
-    background: url("./src/acctt_creation_bg.png");
+    background: url("../src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,8 @@ body {
     height: 100vh;
     place-items: center;
 }
-
+@media screen and (max-width:430px){
+    body{background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E)};}
 
 .form__title {
     font-weight: 300;
@@ -101,7 +102,7 @@ body {
 
 .overlay {
     background-color: var(--lightblue);
-    background: url("./src/acctt_creation_bg.png");
+    background: url("..//src/acctt_creation_bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

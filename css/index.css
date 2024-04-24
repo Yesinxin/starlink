@@ -3,8 +3,116 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 1.6;
+    min-width: 100%;
+    height: auto;
 
 }
+@media screen and (max-width:430px) {
+
+        .header {
+          position: fixed;
+          width: 100%;
+          background: #0F222B;
+        }
+       
+        .menu {
+          /* 隱藏選單 */
+          max-height: 0px;
+          overflow: hidden;
+          /* 取消 display: flex; */
+          display: block;
+          /* 設定絕對定位 */
+          position: absolute;
+          top: 81px;
+          /* 選單滿版呈現，也可以設定 left:0; right:0; */
+          width: 100%;
+          text-align: center;
+          background: #0F222B;
+          transition: max-height .8s;
+        }
+        
+        .menu li {
+          border: 1px dashed #69CA62; 
+        }
+        
+        .menu li a{
+          transition: all .3s;
+        }
+        
+        .menu li a:hover {
+          background: #69CA62;
+          color: #fff;
+        }
+        
+        .showmenu {
+          display: block;
+          color: #69CA62;
+          padding: 1em;
+          text-decoration: none;
+        }
+        
+        .menu-show .menu {
+          max-height: 500px;
+        }
+        
+        /* 將內容往下推，不要跟表頭重疊 */
+        .content {
+          padding-top: 90px;;
+        }
+      }
+    .zitis img {
+        display: none;
+    }
+    #slider {
+        display: none;
+    }
+    .slider-list {
+        display: none;
+    }
+    .slider-list img {
+        display: none;
+    }
+    .dot-list {
+        display: none;
+    }
+    .slider-list li {
+        display: none;
+    }
+    .img01 {
+        width: 100vw;
+        margin-top: 6vw;
+    }
+    .home_page_sign_in_ctn {
+        padding: 0;
+    }
+    .browseSt {
+        width: 100%;
+    }
+    .ContentOne .browseSt .content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .ContentOne .browseSt .content > div {
+        width: 100%;
+        flex-direction: column;
+    }
+    .gameRight1 {
+        display: none;
+    }
+    .div1 {
+        width: 100%;
+        height: 5vw;
+    }
+    .action_menu{display: none;}
+    .ContentOne .browseSt .content > div{width: 430px;
+    margin-bottom:5px;}
+    .Vr{display: none;}
+    .ContentTwo{margin-top: 50px;}
+}
+
+
+
+
 .header {
 
     background-position: center top;
@@ -472,7 +580,6 @@ div.header .menuitem:hover {
     width: 100%;
     height: 500px;
     margin: 0 auto;
-    display: block;
 }
 /* 主体部分 */
 .slider-list img {
@@ -504,6 +611,18 @@ div.header .menuitem:hover {
 }
 
 /* 小点部分 */
+.dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #333;
+        }
 .dot-list {
     position: absolute;
     bottom: 15px;
@@ -512,9 +631,9 @@ div.header .menuitem:hover {
     padding: 2px 10px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, .3);
-}
+} 
 
-.dot-list .dot {
+/* .dot-list .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -524,7 +643,7 @@ div.header .menuitem:hover {
 
 .dot-list .dot.cur {
     background-color: red;
-}
+} */
 
 /*箭头部分  */
 .arraw {
@@ -642,8 +761,7 @@ div.header .menuitem:hover {
 
 .home_page_sign_in_ctn {
     background: rgba(0, 0, 0, 0.2);
-    width: 908px;
-    padding: 16px;
+    width: 100%;
     text-align: center;
     color: #8f98a0;
     font-weight: normal;
@@ -815,14 +933,13 @@ a:hover {
 /* 内容第二段 */
 .ContentOne .ContentTwo {
     width: 100%;
-    position: absolute;
-    top: 1930px;
-
+    margin: 0 auto;
+    position: relative;
     background: linear-gradient(to bottom, rgba(42, 71, 94, 1.0) 5%, rgba(42, 71, 94, 0.0) 70%);
 }
 
 .ContentOne .ContentTwo .hard {
-    width: 100%;
+    width: 940px;
     height: 815px;
     background: transparent;
     margin: 0 auto;
@@ -864,9 +981,6 @@ a:hover {
 .ContentOne .ContentTwo .hard .hardContent {
     width: 618px;
     height: 771px;
-    position: absolute;
-    top: 39px;
-    left: 175px;
 }
 
 .ContentOne .ContentTwo .hard .hardContent .contentHeader {
@@ -979,8 +1093,8 @@ a:hover {
     height: 735px;
     background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
     position: absolute;
-    right: 10rem;
-    margin: 13px 0 0;
+    top:3rem;
+    margin: 13px 0 0 630px;
     display: flex;
     flex-direction: column;
 
@@ -1056,7 +1170,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 70px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1086,8 +1199,7 @@ a:hover {
     width: 619px;
     height: 69px;
     position: absolute;
-    top: 145px;
-    left: 0;
+    top: 135px;
     background-color: transparent;
     z-index: 10;
 }
@@ -1122,7 +1234,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 220px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1157,7 +1268,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 295px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1192,7 +1302,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 370px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1227,7 +1336,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 445px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1262,7 +1370,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 520px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1297,7 +1404,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 595px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1332,7 +1438,6 @@ a:hover {
     height: 69px;
     position: absolute;
     top: 670px;
-    left: 0;
     background-color: transparent;
     z-index: 10;
 }
@@ -1366,8 +1471,7 @@ a:hover {
     width: 619px;
     height: 69px;
     position: absolute;
-    top: 745px;
-    left: 0;
+    top: 37% ;
     background-color: transparent;
     z-index: 10;
 }
@@ -1567,15 +1671,16 @@ a:hover {
 .ContentOne .ContentTwo .fifteen .content .Point > div:first-child {
     background-color: hsla(202, 60%, 100%, 0.6);
 }
-/* 低于四十块结束 */
-*/
+
+
 /* 更新与优惠开始 */
-.ContentOne .ContentTwo .updata {
+.ContentOne .ContentTwo .update {
     width: 940px;
     height: 460px;
+    margin:0 auto;
 }
 
-.ContentOne .ContentTwo .updata .tittle {
+.ContentOne .ContentTwo .update .tittle {
     font-size: 14px;
     color: #fff;
     letter-spacing: 0.03em;
@@ -1585,33 +1690,33 @@ a:hover {
 
 }
 
-.ContentOne .ContentTwo .updata .content {
+.ContentOne .ContentTwo .update .content {
     width: 940px;
     height: 422px;
     display: flex;
     margin: 0 auto;
 }
 
-.ContentOne .ContentTwo .updata .left {
+.ContentOne .ContentTwo .update .left {
     width: 378px;
     height: 422px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
     cursor: pointer;
 }
 
-.ContentOne .ContentTwo .updata .left img {
+.ContentOne .ContentTwo .update .left img {
     width: 378px;
     height: 398px;
 }
 
-.ContentOne .ContentTwo .updata .left > div {
+.ContentOne .ContentTwo .update .left > div {
     text-align: right;
     color: #ACDBF5;
     font-size: 12px;
     margin-right: 3px;
 }
 
-.ContentOne .ContentTwo .updata .right {
+.ContentOne .ContentTwo .update .right {
     width: 562px;
     height: 422px;
     display: flex;
@@ -1619,26 +1724,26 @@ a:hover {
     cursor: pointer;
 }
 
-.ContentOne .ContentTwo .updata .right > div {
+.ContentOne .ContentTwo .update .right > div {
     width: 173px;
     height: 206px;
     margin: 0 0 10px 10px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
 }
 
-.ContentOne .ContentTwo .updata .right > div img {
+.ContentOne .ContentTwo .update .right > div img {
     width: 173px;
     height: 182px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .discount {
+.ContentOne .ContentTwo .update .right > div .price .discount {
     display: flex;
     line-height: 15px;
     justify-content: flex-end;
     margin-right: 5px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .discount > div:first-child {
+.ContentOne .ContentTwo .update .right > div .price .discount > div:first-child {
     color: #a4d007;
     background: #4c6b22;
     height: 15px;
@@ -1648,7 +1753,7 @@ a:hover {
     font-size: 11px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices {
+.ContentOne .ContentTwo .update .right > div .price .prices {
 
     height: 15px;
     padding: 0 5px 0 7px;
@@ -1657,7 +1762,7 @@ a:hover {
     align-items: flex-start;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices > div:first-child {
+.ContentOne .ContentTwo .update .right > div .price .prices > div:first-child {
     color: #7193a6;
     text-decoration: line-through;
     font-size: 11px;
@@ -1665,7 +1770,7 @@ a:hover {
     height: 13px;
 }
 
-.ContentOne .ContentTwo .updata .right > div .price .prices > div:last-child {
+.ContentOne .ContentTwo .update .right > div .price .prices > div:last-child {
     color: #acdbf5;
     font-size: 13px;
     line-height: 13px;

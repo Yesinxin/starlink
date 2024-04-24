@@ -531,3 +531,9 @@ a {
 .valve_links a:hover {
     color: #FFFFFF;
 }
+@media screen and (max-wight:430px){
+    .action_menu{display:none}
+    .help_intro_text{display:none}
+    .content li
+    
+}

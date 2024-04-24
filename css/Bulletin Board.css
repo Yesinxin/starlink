@@ -7,22 +7,41 @@ body {
     line-height: 1.6;
     width: 100%;
 }
-
-@keyframes bganimation {
-    0% {
-        background-position: 0 50%;
+@media screen and (max-width: 430px) {
+    .content li {
+        margin: 10px auto;
+        order: 1;
     }
-
-    50% {
-        background-position: 100% 50%;
+    .small_footer {
+        display: none;
     }
-
-    100% {
-        background-position: 0 50%;
+    .actions {
+        display: none;
+    }
+    .content ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 576px) {
+    .actions {
+        display: none;
+    }
+    .xiari {
+        font-size: 10px;
     }
 }
 
+@media screen and (max-width: 960px) {
+    .small_footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 375px){
+    .supernav_container{margin-left: -15px;}
+}
 /* 头部导航栏样式 */
+
 .header {
 
     background: #171a21;
@@ -32,7 +51,6 @@ body {
 .header {
 
     background-position: center top;
-    min-width: 940px;
     height: 104px;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: normal;
@@ -539,7 +557,7 @@ h2 {
 }
 /* 内容 */
 .background {
-    width: 1200px;
+    width:100%;
     height: 1050px;
     /* background-color: rgb(76, 61, 161); */
     margin: 0 auto;
@@ -559,6 +577,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-evenly
 }
 .content li {
     /* background-color: gray; */

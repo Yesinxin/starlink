@@ -28,8 +28,7 @@ body {
     height: 100vh;
     place-items: center;
 }
-@media screen and (max-width:430px){
-    body{background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E)};}
+
 
 .form__title {
     font-weight: 300;

@@ -6,10 +6,10 @@ body {
     color: #c6d4df;
     font-size: 12px;
 }
+
 .header {
 
     background-position: center top;
-    min-width: 940px;
     height: 104px;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: normal;
@@ -17,10 +17,7 @@ body {
 
     font-size: 14px;
 }
-div.header {
-    padding-left: 16px;
-    padding-right: 16px;
-}
+
 .content {
     right: 0;
     position: relative;
@@ -262,20 +259,18 @@ div.header .menuitem:hover {
     position: relative;
 }
 .wizard_content_wrapper {
-    width: 950px;
+    width: 100%;
     height: 1232px;
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    margin-left: -475px;
+
 
 }
 .card {
-    width: 712px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 61%;
 }
 
 .chat-header {
@@ -332,7 +327,7 @@ div.header .menuitem:hover {
 .help_intro_text {
     color: #5eafde;
     font-size: 20px;
-    margin: 16px 0 20px;
+    margin: 0 auto;
 
 }
 .help_login_nag {
@@ -341,7 +336,7 @@ div.header .menuitem:hover {
     margin-bottom: 30px;
     max-width: 684px;
     background: rgba(0, 0, 0, 0.2);
-    padding: 14px;
+    margin: 0 auto;
 
 }
 .help_login_nag_intro {
@@ -352,12 +347,11 @@ div.header .menuitem:hover {
 }
 .help_login_nag_left {
 
-    width: 220px;
+    width: 50%;
     height: 32px;
-    min-width: 40%;
+    min-width: 100%;
     display: inline-block;
     margin-bottom: 10px;
-    margin-left: 80px;
     background-color: #67c1f5;
 }
 .btn_login_nag_left.btnv6_blue_hoverfade {
@@ -370,12 +364,11 @@ div.header .menuitem:hover {
     font-size: 15px;
     text-align: center;
     line-height: 32px;
-    margin-left: 100px;
-}
+margin-left: 44%;}
 .help_login_nag_right {
-    width: 220px;
+    width: 50%;
     height: 32px;
-    min-width: 40%;
+    min-width: 100%;
     display: inline-block;
     margin-bottom: 10px;
 
@@ -387,7 +380,7 @@ div.header .menuitem:hover {
     font-size: 15px;
     text-align: center;
     line-height: 32px;
-    margin-left: 50px;
+    margin-left: 38%;
 
 }
 .help_section_text {
@@ -406,7 +399,7 @@ div.header .menuitem:hover {
     display: block;
     max-width: 712px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin: 10px auto;
     padding-right: 30px;
     border: solid 1px;
     border-color: #445468;
@@ -421,7 +414,7 @@ a {
 .help_divider {
     background-color: #3b718d;
     height: 1px;
-    max-width: 712px;
+    max-width: 100%;
     margin: 14px 0;
 }
 /* 分各线以下 */
@@ -531,9 +524,19 @@ a {
 .valve_links a:hover {
     color: #FFFFFF;
 }
-@media screen and (max-wight:430px){
-    .action_menu{display:none}
-    .help_intro_text{display:none}
-    .content li
+
+@media screen and (max-width:990px){
+    .actions{display: none;}
+    .help_login_nag{display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
+        .wizard_content_wrapper{width: 100%;}
+        .header{width: 100%;}
+        .footer_content{width: 100%;}
+        .header{padding-left: 0;
+        padding-right: 0;}
+        .card{display: flex;
+            flex-direction: column;}
+        .text{width: 100%;}
     
-}
+}@media screen and (max-width:970px){.help_section_text{margin-top: 3rem;}}

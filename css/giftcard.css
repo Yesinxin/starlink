@@ -14,7 +14,6 @@ body {
 .header {
 
     background-position: center top;
-    min-width: 940px;
     height: 104px;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: normal;
@@ -260,11 +259,11 @@ div.header .menuitem:hover {
 /* 中间 */
 .beijing {
     width: 100%;
-    height: 870px;
+    height: 100%;
     background-color: #1b2838;
 }
 .juzhong {
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -380,7 +379,7 @@ div.header .menuitem:hover {
 }
 
 .ContentOne .storeNav ul .emptyNav {
-    width: 560px;
+    width: 5vw;
 }
 
 .ContentOne .storeNav ul .search {
@@ -594,6 +593,7 @@ input.btn_medium {
     color: #fff !important;
     background: linear-gradient(-60deg, #417a9b 5%,#67c1f5 95%);
 }
+.banner{}
 /* 页脚 */
 #footer_spacer {
     position: relative;
@@ -615,7 +615,7 @@ input.btn_medium {
 }
 .footer_content {
     top: 55px;
-    width: 940px;
+    width:100%;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -661,4 +661,41 @@ input.btn_medium {
 }
 .valve_links a:hover {
     color: #FFFFFF;
+}
+@media screen and (max-width:900px) {
+    .juzhong {
+        display: flex;
+        flex-direction: column;
+    }
+    .giftcard_leftcol.img {
+        width: 5vw;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:540px){
+    .valve_links {
+        display: none;
+    }
+}
+@media screen and (max-width:375px) {
+    .emptyNav {
+        display: none;
+    }
+    .action_menu {
+        display: none;
+    }
+    .footer_text {
+        font-size: 70vw;
+    }
+    .valve_links {
+        display: none;
+    }
+
 }

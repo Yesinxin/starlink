@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="./css/reset.css">
         <!-- 导入本项目css文件 -->
         <link rel="stylesheet" href="./css/index.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        maximum-scale=1.0, user-scalable=0">
 
     </head>
     <body>
@@ -174,8 +175,7 @@
                 </ul>
                 <!-- 小点部分 -->
                 <div class="dot-list">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <span class="dot cur"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -188,12 +188,8 @@
                 <a href="#" class="arraw next" id="right">
                     <span></span>
                 </a>
-
             </div>
-
             <!-- 轮播图2 -->
-
-            <div class="zitis">&nbsp</div>
             <div class="div1">
                 <div class="zitis">特惠</div>
                 <div id="div2" class="div01">1</div>
@@ -673,17 +669,7 @@
                         <div><img src="./steam/header_292x136.jpg" alt="">
                             <div>NT36</div>
                         </div>
-                    </div>
-                    <div class="Point">
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="leftArrow">
-                        <div></div>
-                    </div>
-                    <div class="rightArrow">
-                        <div></div>
-                    </div>
+                    </div>f
                 </div>
             </div>
             <div class="update">
@@ -843,110 +829,78 @@
 </body>
 
 <script>
-var slider = document.getElementById('slider');
-var sliderList = document.querySelector(".slider-list");
-var sliderItems = sliderList.getElementsByTagName('li');
-var leftButton = document.getElementById('left');
-var rightButton = document.getElementById('right');
-var currentIndex = 0; // 从第一张开始
-var autoplayInterval;
-var dotList = document.querySelectorAll('.dot');
-const slideWidth = 957;
-const totalSlides = 6;
-var isAnimating = false;
+    var slid = document.getElementById('slider');
+var slidLis = slid.getElementsByTagName('ul')[0];
+var slidLis=document.querySelector(".slider-list")
+var slidLi = slidLis.getElementsByTagName('li');
 
-// 在末尾添加一个辅助图像，以便轮播到最后一张图片后无缝切换到第一张图片
-var firstClone = sliderItems[0].cloneNode(true);
-sliderList.appendChild(firstClone);
+var lef = document.getElementById('left');
+var righ = document.getElementById('right');
 
-function nextSlide() {
-    if (!isAnimating) {
-        isAnimating = true;
-        currentIndex++;
-        updateSlider();
-    }
-}
-
-function updateSlider() {
-    circle(); // 更新小圆点
-    if (currentIndex === totalSlides) { // 如果达到最后一张图（包括辅助图像），重置到第一张图片
-        sliderList.style.transition = "none";
-        sliderList.style.transform = "translateX(-" + slideWidth + "px)";
+var index = 0;
+function lun() {
+    index++;
+    circe();
+    slidLis.style.left = index * -957 + "px";
+    slidLis.style.transition = "all 1s";
+    if (index === 5) {
+        index = 0;
         setTimeout(function () {
-            sliderList.style.transition = "transform 1s ease";
-            sliderList.style.transform = "translateX(0)";
-            currentIndex = 0;
-            isAnimating = false;
+            slidLis.style.left = 0;
+            slidLis.style.transition = "none";
+        }, 1000)
+    }
+    circe();
+}
+righ.addEventListener("click", lun);
+lef.addEventListener("click", function () {
+    index--;
+    if (index === -1) {
+        slidLis.style.left = 5 * -957 + "px";
+        slidLis.style.transition = "none";
+        index = 4;
+        setTimeout(function () {
+            slidLis.style.left = index * -957 + "px";
+            slidLis.style.transition = "all 1s";
         }, 0);
     } else {
-        sliderList.style.transform = "translateX(-" + currentIndex * slideWidth + "px)";
-        setTimeout(function () {
-            isAnimating = false;
-        }, 1000); // 等待动画结束
+        slidLis.style.left = index * -957 + "px";
     }
-}
+    circe();
+});
+//  自动轮播
+var autoplay = setInterval(lun, 2000);
+slid.addEventListener("mouseenter", function () {
+    clearInterval(autoplay);
+});
+slid.addEventListener("mouseleave", function () {
+    clearInterval;
+    autoplay = setInterval(lun, 2000);
+})
 
-function circle() {
+//小圆点
+
+var dotList = document.getElementsByTagName('span');
+function circe() {
     for (var i = 0; i < dotList.length; i++) {
-        if (i === currentIndex % totalSlides) { // 使用取余确保小圆点在 0-5 之间循环
-            dotList[i].classList.add("cur");
-            dotList[i].style.backgroundColor = "red"; // 设置为红色
+        if (i === index) {
+            dotList[i]
+                .classList
+                .add("cur");
         } else {
-            dotList[i].classList.remove("cur");
-            dotList[i].style.backgroundColor = "white"; // 恢复为白色
+            dotList[i]
+                .classList
+                .remove("cur");
         }
     }
 }
-
-function prevSlide() {
-    if (!isAnimating) {
-        isAnimating = true;
-        currentIndex--;
-        if (currentIndex === -1) { // 如果到达第一张图片之前，重置到最后一张图片
-            sliderList.style.transition = "none";
-            sliderList.style.transform = "translateX(-" + totalSlides * slideWidth + "px)";
-            setTimeout(function () {
-                sliderList.style.transition = "transform 1s ease";
-                sliderList.style.transform = "translateX(-" + (totalSlides - 1) * slideWidth + "px)";
-                currentIndex = totalSlides - 1;
-                isAnimating = false;
-            }, 0);
-        } else {
-            sliderList.style.transform = "translateX(-" + currentIndex * slideWidth + "px)";
-            setTimeout(function () {
-                isAnimating = false;
-            }, 1000); // 等待动画结束
-        }
-        circle(); // 更新小圆点
-    }
-}
-
-// 添加点击事件监听器
-rightButton.addEventListener("click", nextSlide);
-leftButton.addEventListener("click", prevSlide);
-
-// 添加鼠标进入和离开事件监听器
-slider.addEventListener("mouseenter", function () {
-    clearInterval(autoplayInterval);
-});
-
-slider.addEventListener("mouseleave", function () {
-    clearInterval(autoplayInterval);
-    autoplayInterval = setInterval(nextSlide, 1500);
-});
-
-// 自动播放轮播
-autoplayInterval = setInterval(nextSlide, 1500);
-
-    
-
-// 轮播图1 var slid = document.getElementById('slider'); var slidLis =
+// 轮播图1 var slid = docu。ment.getElementById('slider'); var slidLis =
 // slid.getElementsByTagName('ul')[0]; var slidLis =
 // document.querySelector(".slider-list") var slidLi =
 // slidLis.getElementsByTagName('li'); var lef =
 // document.getElementById('left'); var right =
-// document.getElementById('right'); var index = 0; function lun() {
-// index++;     circe();     slidLis.style.left = index * -957 + "px";
+// document.getElementById('right'); var index = 0; function lun() { index++;
+// circe();     slidLis.style.left = index * -957 + "px";
 // slidLis.style.transition = "all 1s";     if (index === 5) {         index =
 // 0;         setTimeout(function () {             slidLis.style.left = 0;
 // slidLis.style.transition = "none";         }, 1000)     }     circe(); }
@@ -957,14 +911,13 @@ autoplayInterval = setInterval(nextSlide, 1500);
 // "px";             slidLis.style.transition = "all 1s";         }, 0);     }
 // else {         slidLis.style.left = index * -957 + "px";     }     circe();
 // });   自动轮播 var autoplay = setInterval(lun, 1500);
-// slid.addEventListener("mouseenter", function () {
-// clearInterval(autoplay); }); slid.addEventListener("mouseleave", function ()
-// {     clearInterval;     autoplay = setInterval(lun, 1500); }) 小圆点 var
-// dotList = document.getElementsByTagName('span'); function circe() {     for
-// (var i = 0; i < dotList.length; i++) {         if (i === index) {
-// dotList[i]                 .classList                 .add("cur");         }
-// else {             dotList[i]                 .classList
-// .remove("cur");         }     } }
+// slid.addEventListener("mouseenter", function () { clearInterval(autoplay);
+// }); slid.addEventListener("mouseleave", function () {     clearInterval;
+// autoplay = setInterval(lun, 1500); }) 小圆点 var dotList =
+// document.getElementsByTagName('span'); function circe() {     for (var i = 0;
+// i < dotList.length; i++) {         if (i === index) { dotList[i]
+// .classList                 .add("cur");         } else {
+// dotList[i]                 .classList .remove("cur");         }     } }
 
 /* 语言下拉框固定悬浮 */
 var state = true;

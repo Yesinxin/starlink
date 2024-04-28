@@ -7,6 +7,7 @@ body {
     line-height: 1.6;
     width: 100%;
 }
+@media screen and (min-width: 375px){}
 @media screen and (max-width: 430px) {
     .content li {
         margin: 10px auto;
@@ -29,7 +30,9 @@ body {
     }
     .xiari {
         font-size: 10px;
+        padding-top: 11vw;
     }
+    .emptyNav{display: none;}
 }
 
 @media screen and (max-width: 960px) {

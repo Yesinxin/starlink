@@ -7,110 +7,44 @@ body {
     height: auto;
 
 }
-@media screen and (max-width:430px) {
-
-        .header {
-          position: fixed;
-          width: 100%;
-          background: #0F222B;
-        }
-       
-        .menu {
-          /* 隱藏選單 */
-          max-height: 0px;
-          overflow: hidden;
-          /* 取消 display: flex; */
-          display: block;
-          /* 設定絕對定位 */
-          position: absolute;
-          top: 81px;
-          /* 選單滿版呈現，也可以設定 left:0; right:0; */
-          width: 100%;
-          text-align: center;
-          background: #0F222B;
-          transition: max-height .8s;
-        }
-        
-        .menu li {
-          border: 1px dashed #69CA62; 
-        }
-        
-        .menu li a{
-          transition: all .3s;
-        }
-        
-        .menu li a:hover {
-          background: #69CA62;
-          color: #fff;
-        }
-        
-        .showmenu {
-          display: block;
-          color: #69CA62;
-          padding: 1em;
-          text-decoration: none;
-        }
-        
-        .menu-show .menu {
-          max-height: 500px;
-        }
-        
-        /* 將內容往下推，不要跟表頭重疊 */
-        .content {
-          padding-top: 90px;;
-        }
-      }
-    .zitis img {
-        display: none;
-    }
-    #slider {
-        display: none;
-    }
-    .slider-list {
-        display: none;
-    }
-    .slider-list img {
-        display: none;
-    }
-    .dot-list {
-        display: none;
-    }
-    .slider-list li {
-        display: none;
-    }
-    .img01 {
-        width: 100vw;
-        margin-top: 6vw;
-    }
-    .home_page_sign_in_ctn {
-        padding: 0;
-    }
-    .browseSt {
-        width: 100%;
-    }
-    .ContentOne .browseSt .content {
-        flex-direction: column;
-        width: 100%;
-    }
-    .ContentOne .browseSt .content > div {
-        width: 100%;
-        flex-direction: column;
-    }
-    .gameRight1 {
-        display: none;
-    }
-    .div1 {
-        width: 100%;
-        height: 5vw;
-    }
-    .action_menu{display: none;}
-    .ContentOne .browseSt .content > div{width: 430px;
-    margin-bottom:5px;}
-    .Vr{display: none;}
-    .ContentTwo{margin-top: 50px;}
+@media screen and (max-width:960px){
+    #slider{display: none;}
+    .img01{width: 99vw;}
+    .ContentOne .ContentTwo .hard > div:nth-child(n+13){display: none;}
 }
-
-
+@media screen and (max-width:768px){.gameRight1{display: none
+    !important;}
+    .ContentOne .ContentTwo .update .content{flex-direction: column;align-items: center;}
+    .div1{display: none;}
+    .ContentOne .ContentTwo .update .left{display: flex;flex-direction: column;}
+    .ContentOne .ContentTwo .update .right{justify-content: space-between;}
+    
+}
+@media screen and (max-width:500px) {
+    .ContentOne .ContentTwo .hard span {
+        display: none;
+    }
+    .ContentOne .ContentTwo .hard .hardContent .hardContentGame > div {
+        width: 100%!important;
+    }
+    .ContentOne .ContentTwo .hard .hardContent .hardContentGame > div .label {
+        font-size: 2vw!important;
+    }
+    .ContentOne .ContentTwo .live .man > div .name {
+        font-size: 2vw;
+    }
+    .hardContentGame {
+        width: 100vw !important;
+    }
+    .ContentOne .ContentTwo .update .right {
+        justify-content: space-around;
+    }
+    .action_menu {
+        display: none!important;
+    }
+    .ContentOne{height: 4370px!important;}
+    #footer{height: 210px!important;}
+}
 
 
 .header {
@@ -575,6 +509,7 @@ div.header .menuitem:hover {
     font-size: 14px;
     /* text-transform: uppercase; */
     color: #fff;
+    padding-top: 3vw;
 }
 .zitis img {
     width: 100%;
@@ -807,7 +742,7 @@ a:hover {
 
 /* 浏览steam */
 .browseSt {
-    width: 940px;
+    width: 100%;
     height: 95px;
     margin: 0 auto;
 }
@@ -822,14 +757,16 @@ a:hover {
 }
 
 .ContentOne .browseSt .content {
-    width: 940px;
+    width: 100%;
     height: 58px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .ContentOne .browseSt .content > div {
-    width: 229px;
+    width: 100%;
     height: 58px;
     display: flex;
     justify-content: center;
@@ -853,7 +790,7 @@ a:hover {
 /* 浏览Steam结束 */
 /* 热门VR游戏开始 */
 .ContentOne .Vr {
-    width: 940px;
+    width: 100%;
     height: 210px;
     margin: 0 auto;
 }
@@ -868,27 +805,27 @@ a:hover {
 }
 
 .ContentOne .Vr .content {
-    width: 940px;
+    width: 100%;
     height: 175px;
     position: relative;
 }
 
 .ContentOne .Vr .content .vrGame {
-    width: 940px;
+    width:  100%;
     height: 134px;
     display: flex;
     justify-content: space-between;
 }
 
 .ContentOne .Vr .content .vrGame > div {
-    width: 229px;
+    width: 100%;
     height: 134px;
     background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
     position: relative;
 }
 
 .ContentOne .Vr .content .vrGame > div > img {
-    width: 229px;
+    width: 100%;
     height: 103px;
 }
 
@@ -904,7 +841,7 @@ a:hover {
 }
 
 .ContentOne .Vr .content .VrPoint {
-    width: 940px;
+    width: 100%;
     height: 41px;
     position: absolute;
     bottom: 0;
@@ -939,7 +876,7 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard {
-    width: 940px;
+    width: 100%;
     height: 815px;
     background: transparent;
     margin: 0 auto;
@@ -979,7 +916,7 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard .hardContent {
-    width: 618px;
+    width: 100%;
     height: 771px;
 }
 
@@ -1089,15 +1026,13 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) {
-    width: 308px;
+    width: 30vw;
     height: 735px;
     background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
     position: absolute;
     top:3rem;
-    margin: 13px 0 0 630px;
-    display: flex;
-    flex-direction: column;
-
+    margin: 13px 0 0 62vw;
+    display: flex;flex-direction: column;
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+14) {
@@ -1105,7 +1040,7 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) .gameName {
-    font-size: 21px;
+    font-size: 2vw;
     letter-spacing: 0;
     color: #263645;
     height: 30px;
@@ -1117,13 +1052,12 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) .num {
-    width: 272px;
     height: 32px;
     padding: 5px 7px;
     margin-left: 15px;
     margin-bottom: 10px;
     background-color: rgba(38, 54, 69, 0.6);
-    width: 258px;
+    width: 25vw;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -1131,7 +1065,7 @@ a:hover {
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) .num span {
     color: #c6d4df;
-    font-size: 12px;
+    font-size: 1vw;
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) .num div {
@@ -1140,7 +1074,7 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) .label {
-    width: 292px;
+    width: 30vw;
     height: 22px;
     display: flex;
     margin: 0 0 6px 15px;
@@ -1160,11 +1094,14 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) img {
-    width: 274px;
+    width: 26vw;
     height: 150px;
-    margin: 0 0 2px 15px;
+    margin:0 auto
 }
-
+.hardContentGame{display: flex;
+    flex-direction: column;
+width: 75vw;
+margin:0 auto;}
 .ContentOne .ContentTwo .hard > .right1 {
     width: 619px;
     height: 69px;
@@ -1504,7 +1441,7 @@ a:hover {
 /* 内容第二段 结束*/
 /* 直播开始 */
 .ContentOne .ContentTwo .live {
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -1518,17 +1455,18 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .live .man {
-    width: 933px;
+    width: 93vw;
     height: 428px;
     margin: 0 5px 8px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .ContentOne .ContentTwo .live .man > div {
     height: 207px;
-    width: 306px;
+    width: 30vw;
     background: rgba(255, 255, 255, 0.1);
     position: relative;
 }
@@ -1601,7 +1539,7 @@ a:hover {
 /* 直播结束 */
 /* 低于四十块开始 */
 .ContentOne .ContentTwo .fifteen {
-    width: 940px;
+    width: 100%;
     height: 210px;
     margin: 0 auto;
 }
@@ -1616,21 +1554,21 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .fifteen .content .Game {
-    width: 940px;
+    width: 100%;
     height: 134px;
     display: flex;
     justify-content: space-between;
 }
 
 .ContentOne .ContentTwo .fifteen .content .Game > div {
-    width: 229px;
+    width: 24vw;
     height: 134px;
     background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
     position: relative;
 }
 
 .ContentOne .ContentTwo .fifteen .content .Game > div > img {
-    width: 229px;
+    width: 24vw;
     height: 103px;
 }
 
@@ -1675,7 +1613,7 @@ a:hover {
 
 /* 更新与优惠开始 */
 .ContentOne .ContentTwo .update {
-    width: 940px;
+    width: 100%;
     height: 460px;
     margin:0 auto;
 }
@@ -1686,26 +1624,25 @@ a:hover {
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     padding-top: 2px;
-    margin-left: 230px;
+    margin-left: 2vw   ;
 
 }
 
 .ContentOne .ContentTwo .update .content {
-    width: 940px;
+    width: 100%;
     height: 422px;
-    display: flex;
-    margin: 0 auto;
-}
+    display: flex;}
 
 .ContentOne .ContentTwo .update .left {
-    width: 378px;
+    width: 60%;
     height: 422px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
     cursor: pointer;
+    margin-left:5vw; ;
 }
 
 .ContentOne .ContentTwo .update .left img {
-    width: 378px;
+    width: 100%;
     height: 398px;
 }
 
@@ -1717,7 +1654,7 @@ a:hover {
 }
 
 .ContentOne .ContentTwo .update .right {
-    width: 562px;
+    width: 80%;
     height: 422px;
     display: flex;
     flex-wrap: wrap;
@@ -1800,9 +1737,9 @@ a:hover {
 
 .footer_content {
     top: 55px;
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 6vw;
 }
 
 #footer_logo img {

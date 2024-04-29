@@ -19,8 +19,6 @@ body {
     .div1{display: none;}
     .ContentOne .ContentTwo .update .left{display: flex;flex-direction: column;}
     .ContentOne .ContentTwo .update .right{justify-content: space-between;}
-   
-    
 }
 @media screen and (max-width:768px
 ) {

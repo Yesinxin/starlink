@@ -11,12 +11,17 @@ body {
     #cart {
         display: flex;
     }
-    ul{display: flex;
-        flex-direction: column;}
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
-@media screen and (max-width:490px){
-    .action_menu{display: none!important};}
+@media screen and (max-width:490px) {
+    .action_menu {
+        display: none!important;
+    };
+}
 .shppingcart {
     background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
 }
@@ -71,7 +76,7 @@ div.header .menuitem:hover {
 .xl {
     display: none;
     position: absolute;
-    width: 88px;
+    width: 88px; 
     top: 90%;
     left: 0;
     background: #000;
@@ -381,101 +386,101 @@ div.header .menuitem:hover {
     width: fit-content;
     height: fit-content;
     background: #FFFFFF;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 187px 75px rgba(0, 0, 0, 0.01), 0 105px 63px rgba(0, 0, 0, 0.05), 0 47px 47px rgba(0, 0, 0, 0.09), 0 12px 26px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
     border-radius: 26px;
     max-width: 450px;
-  }
-  
-  .form {
+}
+
+.form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-  }
-  
-  .payment--options {
+}
+
+.payment--options {
     width: calc(100% - 40px);
     display: grid;
     grid-template-columns: 33% 34% 33%;
     gap: 20px;
     padding: 10px;
-  }
-  
-  .payment--options button {
+}
+
+.payment--options button {
     height: 55px;
     background: #F2F2F2;
     border-radius: 11px;
     padding: 0;
     border: 0;
     outline: none;
-  }
-  
-  .payment--options button svg {
+}
+
+.payment--options button svg {
     height: 18px;
-  }
-  
-  .payment--options button:last-child svg {
+}
+
+.payment--options button:last-child svg {
     height: 22px;
-  }
-  
-  .separator {
+}
+
+.separator {
     width: calc(100% - 20px);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     color: #8B8E98;
     margin: 0 10px;
-  }
-  
-  .separator > p {
+}
+
+.separator > p {
     word-break: keep-all;
     display: block;
     text-align: center;
     font-weight: 600;
     font-size: 11px;
     margin: auto;
-  }
-  
-  .separator .line {
+}
+
+.separator .line {
     display: inline-block;
     width: 100%;
     height: 1px;
     border: 0;
     background-color: #e8e8e8;
     margin: auto;
-  }
-  
-  .credit-card-info--form {
+}
+
+.credit-card-info--form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .input_container {
+}
+
+.input_container {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-  
-  .split {
+}
+
+.split {
     display: grid;
     grid-template-columns: 4fr 2fr;
     gap: 15px;
-  }
-  
-  .split input {
+}
+
+.split input {
     width: 100%;
-  }
-  
-  .input_label {
+}
+
+.input_label {
     font-size: 10px;
     color: #8B8E98;
     font-weight: 600;
-  }
-  
-  .input_field {
+}
+
+.input_field {
     width: auto;
     height: 40px;
     padding: 0 0 0 16px;
@@ -484,15 +489,15 @@ div.header .menuitem:hover {
     background-color: #F2F2F2;
     border: 1px solid #e5e5e500;
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-  }
-  
-  .input_field:focus {
+}
+
+.input_field:focus {
     border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #242424;
+    box-shadow: 0 0 0 2px #242424;
     background-color: transparent;
-  }
-  
-  .purchase--btn {
+}
+
+.purchase--btn {
     height: 55px;
     background: #F2F2F2;
     border-radius: 11px;
@@ -502,24 +507,24 @@ div.header .menuitem:hover {
     font-size: 13px;
     font-weight: 700;
     background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
-    box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+    box-shadow: 0 0 0 0 #FFFFFF, 0 0 0 0 #000000;
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-  }
-  
-  .purchase--btn:hover {
-    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
-  }
-  
-  /* Reset input number styles */
-  .input_field::-webkit-outer-spin-button,
-  .input_field::-webkit-inner-spin-button {
+}
+
+.purchase--btn:hover {
+    box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #0000003a;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-inner-spin-button,
+.input_field::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }
-  
-  .input_field[type=number] {
+}
+
+.input_field[type=number] {
     -moz-appearance: textfield;
-  }
+}
 .ContentOne .storeNav ul li .searchFor:hover {
     border: 1px solid blue;
 }
@@ -618,16 +623,16 @@ div.header .menuitem:hover {
     margin: 0 auto;
     width: 80vw;
     background-color: #fff;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.3);display: flex;
-        --s: 37px; /* control the size */
-        --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
-        --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
-        --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
-        --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
-        background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
-          var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
-          var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
-        background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+    display: flex;
+    --s: 37px;
+    /* control the size */
+    --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2), var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0, var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
 }
 
 .items {
@@ -833,7 +838,7 @@ img {
     margin: 0;
     padding: 0;
     display: inline;
-    width: ;
+    width:;
 }
 
 .save ul li {
@@ -847,7 +852,9 @@ img {
     height: 100px;
     margin: 10px 5px;
 }
-.product_image.img{width: 184px;}
+.product_image.img {
+    width: 184px;
+}
 .img {
     display: block;
     border: 0;

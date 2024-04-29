@@ -11,6 +11,7 @@ body {
     #slider{display: none;}
     .img01{width: 99vw;}
     .ContentOne .ContentTwo .hard > div:nth-child(n+13){display: none;}
+    .div1{width: 100%  !important;}
 }
 @media screen and (max-width:768px){.gameRight1{display: none
     !important;}
@@ -18,10 +19,11 @@ body {
     .div1{display: none;}
     .ContentOne .ContentTwo .update .left{display: flex;flex-direction: column;}
     .ContentOne .ContentTwo .update .right{justify-content: space-between;}
-    
+   
     
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px
+) {
     .ContentOne .ContentTwo .hard span {
         display: none;
     }
@@ -515,7 +517,6 @@ div.header .menuitem:hover {
 }
 .zitis img {
     width: 100%;
-    height: 500px;
     margin: 0 auto;
 }
 /* 主体部分 */

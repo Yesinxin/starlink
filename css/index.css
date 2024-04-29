@@ -19,6 +19,7 @@ body {
     .ContentOne .ContentTwo .update .left{display: flex;flex-direction: column;}
     .ContentOne .ContentTwo .update .right{justify-content: space-between;}
     
+    
 }
 @media screen and (max-width:500px) {
     .ContentOne .ContentTwo .hard span {
@@ -45,6 +46,7 @@ body {
     .ContentOne{height: 4370px!important;}
     #footer{height: 210px!important;}
 }
+
 
 
 .header {
@@ -593,7 +595,7 @@ div.header .menuitem:hover {
 
 .prev {
     left: 0;
-}
+}div1 
 
 .next {
     right: 0;
@@ -624,7 +626,7 @@ div.header .menuitem:hover {
 
 /* 轮播图2 */
 .div1 {
-    width: 100vw;
+    width: 939px;
     height: 353px;
 
     margin: 0 auto;

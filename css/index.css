@@ -283,7 +283,7 @@ div.header .menuitem:hover {
 /* 搜索栏 */
 .ContentOne .storeNav {
     position: absolute;
-    top: 68px;
+    top: 75px;
     width: 100%;
     background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E);
     z-index: 5;
@@ -624,7 +624,7 @@ div.header .menuitem:hover {
 
 /* 轮播图2 */
 .div1 {
-    width: 939px;
+    width: 100vw;
     height: 353px;
 
     margin: 0 auto;

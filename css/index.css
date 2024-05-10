@@ -7,21 +7,53 @@ body {
     height: auto;
 
 }
-@media screen and (max-width:960px){
-    #slider{display: none;}
-    .img01{width: 99vw;}
-    .ContentOne .ContentTwo .hard > div:nth-child(n+13){display: none;}
-    .div1{width: 100%  !important;}
+@media screen and (max-width:960px) {
+    #slider {
+        display: none;
+    }
+    .img01 {
+        width: 99vw;
+    }
+    .ContentOne .ContentTwo .hard > div:nth-child(n+13) {
+        display: none;
+    }
+    .div1 {
+        width: 100% !important;
+    }
 }
-@media screen and (max-width:768px){.gameRight1{display: none
-    !important;}
-    .ContentOne .ContentTwo .update .content{flex-direction: column;align-items: center;}
-    .div1{display: none;}
-    .ContentOne .ContentTwo .update .left{display: flex;flex-direction: column;}
-    .ContentOne .ContentTwo .update .right{justify-content: space-between;}
+@media screen and (max-width:768px) {
+    .gameRight1 {
+        display: none !important;
+    }
+    .ContentOne .ContentTwo .update .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .div1 {
+        display: none;
+    }
+    .ContentOne .ContentTwo .update .left {
+        display: flex;
+        flex-direction: column;
+    }
+    .ContentOne .ContentTwo .update .right {
+        justify-content: space-between;
+    }
+    .zitis img{padding-top: 205px;}
 }
-@media screen and (max-width:768px
-) {
+@media screen and (max-width:768px) {
+    .new {
+        display: none!important;
+    }
+    .kind {
+        display: none!important;
+    }
+    .storeNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
     .ContentOne .ContentTwo .hard span {
         display: none;
     }
@@ -43,12 +75,26 @@ body {
     .action_menu {
         display: none!important;
     }
-    .ContentOne{height: 4370px!important;}
-    #footer{height: 210px!important;}
-}
+    .ContentOne {
+        height: 4370px!important;
+    }
+    #footer {
+        height: 210px!important;
+    }
+    .ContentOne .storeNav ul li{border: 1px solid beige;width: 100vw!important;}}
+    .search{display: none;}
+    .ContentOne .storeNav ul li:nth-child(2){padding:0px!important }
+    .ContentOne .storeNav ul li:nth-child(3){padding:0px!important}
+    @media screen and (max-width:430px){
+        .ContentOne .Vr .content .vrGame{
+            flex-wrap: wrap;
+        }
+        .ContentOne .ContentTwo .hard {
+            padding-top: 90vw;}
+            .ContentOne .ContentTwo .update .left{display: none;}
+        }
 
-
-
+    
 .header {
 
     background-position: center top;
@@ -194,7 +240,7 @@ div.header .menuitem:hover {
 /* 安装样式设置 */
 .header_installsteam_btn_content {
     display: inline-block;
-    padding: 0px 5px 0px 5px;
+    padding: 0 5px;
 
     background-position: 10px 5px;
     background-image: url("./steam/btn_header_installsteam_download.png");
@@ -210,8 +256,6 @@ div.header .menuitem:hover {
     padding: 0 4px;
     font-weight: normal;
 }
-
-
 
 .actions a:hover {
     color: #FFFFFF;
@@ -391,8 +435,6 @@ div.header .menuitem:hover {
     background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
 }
 
-
-
 .ContentOne .storeNav ul .search {
     width: 180px;
     height: 35px;
@@ -548,17 +590,17 @@ div.header .menuitem:hover {
 
 /* 小点部分 */
 .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ccc;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-        .dot.active {
-            background-color: #333;
-        }
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #333;
+}
 .dot-list {
     position: absolute;
     bottom: 15px;
@@ -567,7 +609,7 @@ div.header .menuitem:hover {
     padding: 2px 10px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, .3);
-} 
+}
 
 /* .dot-list .dot {
     display: inline-block;
@@ -594,9 +636,8 @@ div.header .menuitem:hover {
 
 .prev {
     left: 0;
-}div1 
-
-.next {
+}
+div1 .next {
     right: 0;
 }
 
@@ -812,7 +853,7 @@ a:hover {
 }
 
 .ContentOne .Vr .content .vrGame {
-    width:  100%;
+    width: 100%;
     height: 134px;
     display: flex;
     justify-content: space-between;
@@ -1031,9 +1072,10 @@ a:hover {
     height: 735px;
     background: linear-gradient(to right, #95bbd4 5%, #859bac 95%);
     position: absolute;
-    top:3rem;
+    top: 3rem;
     margin: 13px 0 0 62vw;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .ContentOne .ContentTwo .hard > div:nth-child(n+14) {
@@ -1097,12 +1139,14 @@ a:hover {
 .ContentOne .ContentTwo .hard > div:nth-child(n+13) img {
     width: 26vw;
     height: 150px;
-    margin:0 auto
+    margin: 0 auto;
 }
-.hardContentGame{display: flex;
+.hardContentGame {
+    display: flex;
     flex-direction: column;
-width: 75vw;
-margin:0 auto;}
+    width: 75vw;
+    margin: 0 auto;
+}
 .ContentOne .ContentTwo .hard > .right1 {
     width: 619px;
     height: 69px;
@@ -1409,7 +1453,7 @@ margin:0 auto;}
     width: 619px;
     height: 69px;
     position: absolute;
-    top: 37% ;
+    top: 37%;
     background-color: transparent;
     z-index: 10;
 }
@@ -1611,12 +1655,11 @@ margin:0 auto;}
     background-color: hsla(202, 60%, 100%, 0.6);
 }
 
-
 /* 更新与优惠开始 */
 .ContentOne .ContentTwo .update {
     width: 100%;
     height: 460px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .ContentOne .ContentTwo .update .tittle {
@@ -1625,21 +1668,22 @@ margin:0 auto;}
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     padding-top: 2px;
-    margin-left: 2vw   ;
+    margin-left: 2vw;
 
 }
 
 .ContentOne .ContentTwo .update .content {
     width: 100%;
     height: 422px;
-    display: flex;}
+    display: flex;
+}
 
 .ContentOne .ContentTwo .update .left {
     width: 60%;
     height: 422px;
     background: linear-gradient(135deg, rgba(37, 49, 63, 1) 5%, rgba(54, 97, 125, 1) 95%);
     cursor: pointer;
-    margin-left:5vw; ;
+    margin-left: 5vw;
 }
 
 .ContentOne .ContentTwo .update .left img {
